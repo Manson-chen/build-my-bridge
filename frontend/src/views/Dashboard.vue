@@ -107,15 +107,11 @@
             <el-button type="text" @click="goToLogs">查看全部 →</el-button>
           </div>
         </template>
-        <el-table :data="recentLogs" style="width: 100%">
-          <el-table-column prop="time" label="时间" width="140">
-            <template #default="{ row }">
-              <span class="time-text">{{ formatTime(row.time) }}</span>
-            </template>
-          </el-table-column>
-          <el-table-column prop="bot" label="机器人" width="120" />
-          <el-table-column prop="difyApp" label="Dify 应用" width="140" />
-          <el-table-column prop="user" label="用户" width="100" />
+        <el-table :data="recentLogs" style="width: 100%" header-cell-style="background:#f5f7fa;color:#303133;font-weight:600;">
+          <el-table-column prop="time" label="时间" width="140" />
+          <el-table-column prop="botName" label="机器人" min-width="120" />
+          <el-table-column prop="difyAppName" label="Dify 应用" min-width="140" />
+          <el-table-column prop="userName" label="用户" min-width="100" />
           <el-table-column prop="status" label="状态" width="100">
             <template #default="{ row }">
               <el-tag v-if="row.status === 'success'" type="success" size="small">✅</el-tag>
@@ -143,13 +139,13 @@ const stats = ref({
   todayMessages: 1234
 })
 
-// 最近日志
+// 最近日志 - 字段与消息日志页面保持一致 (botName, difyAppName, userName)
 const recentLogs = ref([
-  { time: '2024-01-15 10:23:15', bot: '客服助手', difyApp: 'AI问答助手', user: '张三', status: 'success' },
-  { time: '2024-01-15 10:20:42', bot: '技术支持', difyApp: '技术文档', user: '李四', status: 'success' },
-  { time: '2024-01-15 10:15:08', bot: '客服助手', difyApp: 'AI问答助手', user: '王五', status: 'failed' },
-  { time: '2024-01-15 10:10:33', bot: '产品咨询', difyApp: '产品介绍', user: '赵六', status: 'success' },
-  { time: '2024-01-15 10:05:21', bot: '客服助手', difyApp: 'AI问答助手', user: '钱七', status: 'success' }
+  { time: '2024-01-15 10:23:15', botName: '客服助手', difyAppName: 'AI 问答助手', userName: '张三', status: 'success' },
+  { time: '2024-01-15 10:20:42', botName: '技术支持', difyAppName: '技术文档', userName: '李四', status: 'success' },
+  { time: '2024-01-15 10:15:08', botName: '客服助手', difyAppName: 'AI 问答助手', userName: '王五', status: 'failed' },
+  { time: '2024-01-15 10:10:33', botName: '产品咨询', difyAppName: '产品介绍', userName: '赵六', status: 'success' },
+  { time: '2024-01-15 10:05:21', botName: '客服助手', difyAppName: 'AI 问答助手', userName: '钱七', status: 'success' }
 ])
 
 const refreshStats = () => {
@@ -219,6 +215,18 @@ const formatTime = (time: string) => {
 
 .content-section {
   margin-bottom: 20px;
+}
+
+.chart-card :deep(.el-card__body) {
+  padding: 20px;
+}
+
+:deep(.el-table) {
+  th.el-table__cell {
+    background-color: #f5f7fa !important;
+    color: #303133;
+    font-weight: 600;
+  }
 }
 
 .card-header {

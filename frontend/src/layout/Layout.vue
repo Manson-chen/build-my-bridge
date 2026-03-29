@@ -2,45 +2,44 @@
   <el-container class="layout-container">
     <!-- 侧边栏 -->
     <el-aside width="220px" class="sidebar">
-      <div class="logo">
+      <router-link to="/dashboard" class="logo-link">
         <el-icon :size="28" color="#409EFF"><Connection /></el-icon>
         <span class="logo-text">BuildMyBridge</span>
-      </div>
+      </router-link>
 
       <el-menu
-        :default-active="activeMenu"
+        mode="vertical"
         class="sidebar-menu"
-        :collapse="false"
-        router
+        :default-active="defaultActive"
       >
-        <el-menu-item index="/dashboard">
+        <el-menu-item index="/dashboard" @click="$router.push('/dashboard')">
           <el-icon><DataLine /></el-icon>
           <span>仪表盘</span>
         </el-menu-item>
 
-        <el-menu-item index="/bots">
+        <el-menu-item index="/bots" @click="$router.push('/bots')">
           <el-icon><ChatDotRound /></el-icon>
           <span>机器人管理</span>
         </el-menu-item>
 
-        <el-menu-item index="/dify-apps">
+        <el-menu-item index="/dify-apps" @click="$router.push('/dify-apps')">
           <el-icon><Link /></el-icon>
           <span>Dify 应用</span>
         </el-menu-item>
 
-        <el-menu-item index="/bindings">
+        <el-menu-item index="/bindings" @click="$router.push('/bindings')">
           <el-icon><Share /></el-icon>
           <span>绑定管理</span>
         </el-menu-item>
 
-        <el-menu-item index="/logs">
+        <el-menu-item index="/logs" @click="$router.push('/logs')">
           <el-icon><Document /></el-icon>
           <span>消息日志</span>
         </el-menu-item>
 
         <el-divider />
 
-        <el-menu-item index="/settings">
+        <el-menu-item index="/settings" @click="$router.push('/settings')">
           <el-icon><Setting /></el-icon>
           <span>系统设置</span>
         </el-menu-item>
@@ -48,11 +47,11 @@
     </el-aside>
 
     <!-- 主内容区 -->
-    <el-container>
+    <el-container class="main-container">
       <!-- 顶部栏 -->
       <el-header class="header">
         <div class="header-left">
-          <breadcrumb />
+          <breadcrumb :key="route.path" />
         </div>
         <div class="header-right">
           <el-badge :value="3" class="message-badge">
@@ -78,7 +77,11 @@
 
       <!-- 内容区域 -->
       <el-main class="main-content">
-        <router-view />
+        <router-view v-slot="{ Component }">
+          <keep-alive>
+            <component :is="Component" :key="route.path" />
+          </keep-alive>
+        </router-view>
       </el-main>
     </el-container>
   </el-container>
@@ -104,7 +107,21 @@ import {
 const route = useRoute()
 const router = useRouter()
 
-const activeMenu = computed(() => route.path)
+const activeMenu = computed(() => {
+  // 处理根路径默认显示仪表盘
+  if (route.path === '/') return '/dashboard'
+  return route.path
+})
+
+const defaultActive = computed(() => {
+  const path = route.path
+  // 如果是子路由页面，返回当前路径
+  if (path !== '/' && !path.startsWith('/dashboard')) {
+    return path
+  }
+  // 根路径和仪表盘都返回 /dashboard
+  return '/dashboard'
+})
 
 const handleCommand = (command: string) => {
   switch (command) {
@@ -124,32 +141,37 @@ const handleCommand = (command: string) => {
 
 <style scoped>
 .layout-container {
+  display: flex;
+  width: 100%;
   height: 100vh;
 }
 
 .sidebar {
   background-color: #304156;
   color: #fff;
+  flex-shrink: 0;
 }
 
-.logo {
-  height: 60px;
+.logo-link {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  height: 60px;
   border-bottom: 1px solid #1f2d3d;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sidebar-menu {
+  border-right: none;
+  background-color: transparent;
 }
 
 .logo-text {
   font-size: 18px;
   font-weight: 600;
   color: #fff;
-}
-
-.sidebar-menu {
-  border-right: none;
-  background-color: transparent;
 }
 
 .sidebar-menu :deep(.el-menu-item) {
@@ -165,13 +187,21 @@ const handleCommand = (command: string) => {
   background-color: #263445;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
-  z-index: 100;
+  height: 60px !important;
+  flex-shrink: 0;
 }
 
 .header-right {
@@ -199,6 +229,7 @@ const handleCommand = (command: string) => {
 .main-content {
   background-color: #f0f2f5;
   padding: 20px;
+  flex: 1;
   overflow-y: auto;
 }
 </style>
