@@ -1,0 +1,415 @@
+- generic [ref=e2]:
+  - region:
+    - link "跳到主要内容" [ref=e3] [cursor=pointer]:
+      - /url: "#"
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e7] [cursor=pointer]:
+          - /url: /
+        - link "文档" [ref=e9] [cursor=pointer]:
+          - /url: /docs/quick-start
+        - button "旧版本" [ref=e11] [cursor=pointer]
+      - generic [ref=e12]:
+        - button "切换浅色/暗黑模式（当前为暗黑模式）" [ref=e14] [cursor=pointer]:
+          - img [ref=e16]
+        - button "搜索" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]:
+            - img [ref=e26]
+            - generic [ref=e28]: 搜索
+          - generic [ref=e29]:
+            - img [ref=e31]
+            - generic [ref=e33]: K
+  - generic [ref=e35]:
+    - complementary [ref=e36]:
+      - generic [ref=e37]:
+        - link [ref=e38] [cursor=pointer]:
+          - /url: /
+        - navigation [ref=e39]:
+          - list [ref=e40]:
+            - listitem [ref=e41]:
+              - generic [ref=e42]:
+                - link [ref=e44] [cursor=pointer]:
+                  - /url: https://www.orangeforms.com?utm_source=knife4j
+                  - img [ref=e45]
+                - link [ref=e47] [cursor=pointer]:
+                  - /url: https://www.torchv.com/?utm_source=knife4j
+                  - img [ref=e48]
+                - link [ref=e50] [cursor=pointer]:
+                  - /url: https://api-buddy.cn/?utm_source=Knife4j&utm_medium=affiliate&utm_campaign=product
+                  - img [ref=e51]
+                - link "成为赞助商" [ref=e53] [cursor=pointer]:
+                  - /url: /docs/community/donate
+            - listitem [ref=e54]:
+              - link "快速开始" [ref=e55] [cursor=pointer]:
+                - /url: /docs/quick-start
+            - listitem [ref=e56]:
+              - link "Knife4j版本参考" [ref=e57] [cursor=pointer]:
+                - /url: /docs/quick-start/start-knife4j-version
+            - listitem [ref=e58]:
+              - link "如何贡献文档" [ref=e59] [cursor=pointer]:
+                - /url: /docs/community/joinus
+            - listitem [ref=e60]:
+              - link "如何贡献代码" [ref=e61] [cursor=pointer]:
+                - /url: /docs/community/contributing
+            - listitem [ref=e62]:
+              - generic [ref=e63]:
+                - link "序章" [ref=e64] [cursor=pointer]:
+                  - /url: /docs/introduction
+                - button "打开/收起侧边栏菜单「序章」" [ref=e65] [cursor=pointer]
+            - listitem [ref=e66]:
+              - generic [ref=e67]:
+                - link "社区" [ref=e68] [cursor=pointer]:
+                  - /url: /docs/community
+                - button "打开/收起侧边栏菜单「社区」" [ref=e69] [cursor=pointer]
+            - listitem [ref=e70]:
+              - generic [ref=e71]:
+                - link "增强特性" [ref=e72] [cursor=pointer]:
+                  - /url: /docs/features
+                - button "打开/收起侧边栏菜单「增强特性」" [ref=e73] [cursor=pointer]
+            - listitem [ref=e74]:
+              - generic [ref=e75]:
+                - link "版本升级" [ref=e76] [cursor=pointer]:
+                  - /url: /docs/upgrading
+                - button "打开/收起侧边栏菜单「版本升级」" [ref=e77] [cursor=pointer]
+        - button "收起侧边栏" [ref=e78] [cursor=pointer]:
+          - img [ref=e79]
+    - main [ref=e83]:
+      - generic [ref=e85]:
+        - generic [ref=e87]:
+          - article [ref=e88]:
+            - navigation "页面路径" [ref=e89]:
+              - list [ref=e90]:
+                - listitem [ref=e91]:
+                  - link "主页面" [ref=e92] [cursor=pointer]:
+                    - /url: /
+                    - img [ref=e93]
+                - listitem [ref=e95]:
+                  - generic [ref=e96]: 快速开始
+            - generic [ref=e97]:
+              - heading "快速开始" [level=1] [ref=e99]
+              - generic [ref=e100]:
+                - generic [ref=e101]:
+                  - img [ref=e103]
+                  - text: 温馨提醒
+                - paragraph [ref=e106]:
+                  - strong [ref=e107]:
+                    - text: Knife4jInsight(简单、方便的OpenAPI接口文档私有化聚合平台),地址：
+                    - link "http://knife4j.net" [ref=e108] [cursor=pointer]:
+                      - /url: http://knife4j.net
+              - paragraph [ref=e109]:
+                - text: 如果你对选择Knife4j的版本存在疑惑，可以参考文档
+                - link "Knife4j版本参考" [ref=e110] [cursor=pointer]:
+                  - /url: /docs/quick-start/start-knife4j-version
+              - heading "Spring Boot 3#" [level=2] [ref=e111]:
+                - text: Spring Boot 3
+                - link "#" [ref=e112] [cursor=pointer]:
+                  - /url: "#spring-boot-3"
+              - generic [ref=e113]:
+                - generic [ref=e114]:
+                  - img [ref=e116]
+                  - text: 提示
+                - list [ref=e119]:
+                  - listitem [ref=e120]: Spring Boot 3 只支持OpenAPI3规范
+                  - listitem [ref=e121]: Knife4j提供的starter已经引用springdoc-openapi的jar，开发者需注意避免jar包冲突
+                  - listitem [ref=e122]: JDK版本必须 >= 17
+                  - listitem [ref=e123]:
+                    - text: 详细Demo请参考
+                    - link "knife4j-spring-boot3-demo" [ref=e124] [cursor=pointer]:
+                      - /url: https://gitee.com/xiaoym/swagger-bootstrap-ui-demo/tree/master/knife4j-spring-boot3-demo
+              - paragraph [ref=e125]: 首先，引用Knife4j的starter,Maven坐标如下：
+              - generic [ref=e127]:
+                - code [ref=e129]:
+                  - generic [ref=e130]: <dependency>
+                  - generic [ref=e131]: <groupId>com.github.xiaoymin</groupId>
+                  - generic [ref=e132]: <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+                  - generic [ref=e133]: <version>4.4.0</version>
+                  - generic [ref=e134]: </dependency>
+                - generic [ref=e135]:
+                  - button "切换自动换行" [ref=e136] [cursor=pointer]:
+                    - img [ref=e137]
+                  - button "复制代码到剪贴板" [ref=e139] [cursor=pointer]:
+                    - generic [ref=e140]:
+                      - img [ref=e141]
+                      - img [ref=e143]
+              - paragraph [ref=e145]: Gradle坐标如下：
+              - generic [ref=e147]:
+                - code [ref=e149]:
+                  - generic [ref=e150]: implementation("com.github.xiaoymin:knife4j-openapi3-jakarta-spring-boot-starter:4.4.0")
+                - generic [ref=e151]:
+                  - button "切换自动换行" [ref=e152] [cursor=pointer]:
+                    - img [ref=e153]
+                  - button "复制代码到剪贴板" [ref=e155] [cursor=pointer]:
+                    - generic [ref=e156]:
+                      - img [ref=e157]
+                      - img [ref=e159]
+              - paragraph [ref=e161]:
+                - text: 引入之后，其余的配置，开发者即可完全参考
+                - link "springdoc-openapi" [ref=e162] [cursor=pointer]:
+                  - /url: https://springdoc.org/
+                - text: 的项目说明，Knife4j只提供了增强部分，如果要启用Knife4j的增强功能，可以在配置文件中进行开启
+              - paragraph [ref=e163]: "部分配置如下:"
+              - generic [ref=e165]:
+                - code [ref=e167]:
+                  - generic [ref=e168]: "# springdoc-openapi项目配置"
+                  - generic [ref=e169]: "springdoc:"
+                  - generic [ref=e170]: "swagger-ui:"
+                  - generic [ref=e171]: "path: /swagger-ui.html"
+                  - generic [ref=e172]: "tags-sorter: alpha"
+                  - generic [ref=e173]: "operations-sorter: alpha"
+                  - generic [ref=e174]: "api-docs:"
+                  - generic [ref=e175]: "path: /v3/api-docs"
+                  - generic [ref=e176]: "group-configs:"
+                  - generic [ref=e177]: "- group: 'default'"
+                  - generic [ref=e178]: "paths-to-match: '/**'"
+                  - generic [ref=e179]: "packages-to-scan: com.xiaominfo.knife4j.demo.web"
+                  - generic [ref=e180]: "# knife4j的增强配置，不需要增强可以不配"
+                  - generic [ref=e181]: "knife4j:"
+                  - generic [ref=e182]: "enable: true"
+                  - generic [ref=e183]: "setting:"
+                  - generic [ref=e184]: "language: zh_cn"
+                - generic [ref=e185]:
+                  - button "切换自动换行" [ref=e186] [cursor=pointer]:
+                    - img [ref=e187]
+                  - button "复制代码到剪贴板" [ref=e189] [cursor=pointer]:
+                    - generic [ref=e190]:
+                      - img [ref=e191]
+                      - img [ref=e193]
+              - paragraph [ref=e195]:
+                - text: Knife4j更多增强配置明细，请移步
+                - link "文档" [ref=e196] [cursor=pointer]:
+                  - /url: /docs/features/enhance
+                - text: 进行查看
+              - paragraph [ref=e197]: 最后，使用OpenAPI3的规范注解，注释各个Spring的REST接口，示例代码如下：
+              - generic [ref=e199]:
+                - code [ref=e201]:
+                  - generic [ref=e202]: "@RestController"
+                  - generic [ref=e203]: "@RequestMapping(\"body\")"
+                  - generic [ref=e204]: "@Tag(name = \"body参数\")"
+                  - generic [ref=e205]: "public class BodyController {"
+                  - generic [ref=e206]: "@Operation(summary = \"普通body请求\")"
+                  - generic [ref=e207]: "@PostMapping(\"/body\")"
+                  - generic [ref=e208]: "public ResponseEntity<FileResp> body(@RequestBody FileResp fileResp){"
+                  - generic [ref=e209]: return ResponseEntity.ok(fileResp);
+                  - generic [ref=e210]: "}"
+                  - generic [ref=e211]: "@Operation(summary = \"普通body请求+Param+Header+Path\")"
+                  - generic [ref=e212]: "@Parameters({"
+                  - generic [ref=e213]: "@Parameter(name = \"id\",description = \"文件id\",in = ParameterIn.PATH),"
+                  - generic [ref=e214]: "@Parameter(name = \"token\",description = \"请求token\",required = true,in = ParameterIn.HEADER),"
+                  - generic [ref=e215]: "@Parameter(name = \"name\",description = \"文件名称\",required = true,in=ParameterIn.QUERY)"
+                  - generic [ref=e216]: "})"
+                  - generic [ref=e217]: "@PostMapping(\"/bodyParamHeaderPath/{id}\")"
+                  - generic [ref=e218]: "public ResponseEntity<FileResp> bodyParamHeaderPath(@PathVariable(\"id\") String id,@RequestHeader(\"token\") String token, @RequestParam(\"name\")String name,@RequestBody FileResp fileResp){"
+                  - generic [ref=e219]: fileResp.setName(fileResp.getName()+",receiveName:"+name+",token:"+token+",pathID:"+id);
+                  - generic [ref=e220]: return ResponseEntity.ok(fileResp);
+                  - generic [ref=e221]: "}"
+                  - generic [ref=e222]: "}"
+                - generic [ref=e223]:
+                  - button "切换自动换行" [ref=e224] [cursor=pointer]:
+                    - img [ref=e225]
+                  - button "复制代码到剪贴板" [ref=e227] [cursor=pointer]:
+                    - generic [ref=e228]:
+                      - img [ref=e229]
+                      - img [ref=e231]
+              - paragraph [ref=e233]:
+                - text: 最后，访问Knife4j的文档地址：
+                - code [ref=e234]: http://ip:port/doc.html
+                - text: 即可查看文档
+              - heading "Spring Boot 2#" [level=2] [ref=e235]:
+                - text: Spring Boot 2
+                - link "#" [ref=e236] [cursor=pointer]:
+                  - /url: "#spring-boot-2"
+              - generic [ref=e237]:
+                - generic [ref=e238]:
+                  - img [ref=e240]
+                  - text: 提示
+                - list [ref=e243]:
+                  - listitem [ref=e244]: Spring Boot 版本建议 2.4.0~3.0.0之间
+                  - listitem [ref=e245]: Spring Boot 版本 < 2.4 版本则建议选择Knife4j 4.0之前的版本
+                  - listitem [ref=e246]:
+                    - text: "Spring Boot 2 + OpenAPI2 demo:"
+                    - link "knife4j-spring-boot27-demo" [ref=e247] [cursor=pointer]:
+                      - /url: https://gitee.com/xiaoym/swagger-bootstrap-ui-demo/tree/master/knife4j-spring-boot27-demo
+                  - listitem [ref=e248]:
+                    - text: "Spring Boot 2 + OpenAPI3 demo:"
+                    - link "knife4j-springdoc-openapi-demo" [ref=e249] [cursor=pointer]:
+                      - /url: https://gitee.com/xiaoym/swagger-bootstrap-ui-demo/tree/master/knife4j-springdoc-openapi-demo
+              - heading "OpenAPI2#" [level=3] [ref=e250]:
+                - text: OpenAPI2
+                - link "#" [ref=e251] [cursor=pointer]:
+                  - /url: "#openapi2"
+              - paragraph [ref=e252]: OpenAPI2(Swagger)规范是Knife4j之前一直提供支持的版本，底层依赖框架为Springfox,此次在4.0版本开始
+              - paragraph [ref=e253]: Knife4j有了新的变化，主要有以下几点：
+              - list [ref=e254]:
+                - listitem [ref=e255]:
+                  - text: Springfox版本选择的依然是
+                  - strong [ref=e256]: 2.10.5
+                  - text: 版本，而并非springfox最新3.0.0版本
+                - listitem [ref=e257]: 不支持以Springfox框架为基础的OpenAPI3规范,放弃Springfox项目的后续版本适配支持工作
+                - listitem [ref=e258]: Spring Boot 版本建议 2.4.0~3.0.0之间
+              - paragraph [ref=e259]:
+                - text: 可以使用
+                - code [ref=e260]: knife4j-openapi2-spring-boot-starter
+                - text: ",maven 坐标如下："
+              - generic [ref=e262]:
+                - code [ref=e264]:
+                  - generic [ref=e265]: <dependency>
+                  - generic [ref=e266]: <groupId>com.github.xiaoymin</groupId>
+                  - generic [ref=e267]: <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
+                  - generic [ref=e268]: <version>4.4.0</version>
+                  - generic [ref=e269]: </dependency>
+                - generic [ref=e270]:
+                  - button "切换自动换行" [ref=e271] [cursor=pointer]:
+                    - img [ref=e272]
+                  - button "复制代码到剪贴板" [ref=e274] [cursor=pointer]:
+                    - generic [ref=e275]:
+                      - img [ref=e276]
+                      - img [ref=e278]
+              - paragraph [ref=e280]: 配置yml属性，如下：
+              - generic [ref=e282]:
+                - code [ref=e284]:
+                  - generic [ref=e285]: "knife4j:"
+                  - generic [ref=e286]: "enable: true"
+                  - generic [ref=e287]: "openapi:"
+                  - generic [ref=e288]: "title: Knife4j官方文档"
+                  - generic [ref=e289]: "description: \"`我是测试`,**你知道吗**"
+                  - generic [ref=e290]: "# aaa\""
+                  - generic [ref=e291]: "email: xiaoymin@foxmail.com"
+                  - generic [ref=e292]: "concat: 八一菜刀"
+                  - generic [ref=e293]: "url: https://docs.xiaominfo.com"
+                  - generic [ref=e294]: "version: v4.0"
+                  - generic [ref=e295]: "license: Apache 2.0"
+                  - generic [ref=e296]: "license-url: https://stackoverflow.com/"
+                  - generic [ref=e297]: "terms-of-service-url: https://stackoverflow.com/"
+                  - generic [ref=e298]: "group:"
+                  - generic [ref=e299]: "test1:"
+                  - generic [ref=e300]: "group-name: 分组名称"
+                  - generic [ref=e301]: "api-rule: package"
+                  - generic [ref=e302]: "api-rule-resources:"
+                  - generic [ref=e303]: "- com.knife4j.demo.new3"
+                - button "复制代码到剪贴板" [ref=e305] [cursor=pointer]:
+                  - generic [ref=e306]:
+                    - img [ref=e307]
+                    - img [ref=e309]
+              - paragraph [ref=e311]:
+                - text: 最后，访问Knife4j的文档地址：
+                - code [ref=e312]: http://ip:port/doc.html
+                - text: 即可查看文档
+              - heading "OpenAPI3#" [level=3] [ref=e313]:
+                - text: OpenAPI3
+                - link "#" [ref=e314] [cursor=pointer]:
+                  - /url: "#openapi3"
+              - paragraph [ref=e315]: OpenAPI3的规范，目前针对Java的Spring Boot项目，主要支持的有2个版本
+              - list [ref=e316]:
+                - listitem [ref=e317]:
+                  - strong [ref=e318]: springfox 3.0.0：
+                  - text: 同时兼容OpenAPI2以及OpenAPI3，但是停更很久了
+                - listitem [ref=e319]:
+                  - strong [ref=e320]: springdoc-openapi：
+                  - text: 兼容OpenAPI3规范，更新速度频繁
+              - paragraph [ref=e321]: Knife4j在只有的OpenAPI3规范中，底层基础框架选择springdoc-openapi项目
+              - paragraph [ref=e322]:
+                - strong [ref=e323]: 针对Springfox3.0.0版本会放弃。
+              - paragraph [ref=e324]: 建议开发者如果使用OpenAPI3规范的话，也尽快迁移过来。
+              - paragraph [ref=e325]:
+                - text: 可以使用
+                - code [ref=e326]: knife4j-openapi3-spring-boot-starter
+                - text: ",maven 坐标如下："
+              - generic [ref=e328]:
+                - code [ref=e330]:
+                  - generic [ref=e331]: <dependency>
+                  - generic [ref=e332]: <groupId>com.github.xiaoymin</groupId>
+                  - generic [ref=e333]: <artifactId>knife4j-openapi3-spring-boot-starter</artifactId>
+                  - generic [ref=e334]: <version>4.4.0</version>
+                  - generic [ref=e335]: </dependency>
+                - generic [ref=e336]:
+                  - button "切换自动换行" [ref=e337] [cursor=pointer]:
+                    - img [ref=e338]
+                  - button "复制代码到剪贴板" [ref=e340] [cursor=pointer]:
+                    - generic [ref=e341]:
+                      - img [ref=e342]
+                      - img [ref=e344]
+              - paragraph [ref=e346]: 引入jar包后，同上面的Spring Boot 3版本使用方式一样，进行配置即可。
+            - generic [ref=e351]:
+              - text: 最后由 xiaoyumin 于
+              - time [ref=e353]: 2023年12月10日
+              - text: 更新
+          - navigation "文档分页导航" [ref=e354]:
+            - link "下一页 Knife4j版本参考 »" [ref=e355] [cursor=pointer]:
+              - /url: /docs/quick-start/start-knife4j-version
+              - generic [ref=e356]: 下一页
+              - generic [ref=e357]: Knife4j版本参考 »
+        - list [ref=e360]:
+          - listitem [ref=e361]:
+            - link "Spring Boot 3" [ref=e362] [cursor=pointer]:
+              - /url: "#spring-boot-3"
+          - listitem [ref=e363]:
+            - link "Spring Boot 2" [ref=e364] [cursor=pointer]:
+              - /url: "#spring-boot-2"
+            - list [ref=e365]:
+              - listitem [ref=e366]:
+                - link "OpenAPI2" [ref=e367] [cursor=pointer]:
+                  - /url: "#openapi2"
+              - listitem [ref=e368]:
+                - link "OpenAPI3" [ref=e369] [cursor=pointer]:
+                  - /url: "#openapi3"
+  - contentinfo [ref=e370]:
+    - generic [ref=e371]:
+      - generic [ref=e372]:
+        - generic [ref=e373]:
+          - generic [ref=e374]: 文档指南
+          - list [ref=e375]:
+            - listitem [ref=e376]:
+              - link "文档" [ref=e377] [cursor=pointer]:
+                - /url: /docs/quick-start
+            - listitem [ref=e378]:
+              - link "示例" [ref=e379] [cursor=pointer]:
+                - /url: /docs/community/simple-demo
+            - listitem [ref=e380]:
+              - link "更新日志" [ref=e381] [cursor=pointer]:
+                - /url: /docs/changelog
+            - listitem [ref=e382]:
+              - link "升级到v4.0" [ref=e383] [cursor=pointer]:
+                - /url: /docs/upgrading/upgrading-to-v4
+        - generic [ref=e384]:
+          - generic [ref=e385]: 社区&友链
+          - list [ref=e386]:
+            - listitem [ref=e387]:
+              - link "Gitter" [ref=e388] [cursor=pointer]:
+                - /url: https://gitter.im/knife4j/knife4j
+                - text: Gitter
+                - img [ref=e389]
+            - listitem [ref=e391]:
+              - link "开源中国" [ref=e392] [cursor=pointer]:
+                - /url: https://www.oschina.net/question/tag/swagger-bootstrap-ui
+                - text: 开源中国
+                - img [ref=e393]
+            - listitem [ref=e395]:
+              - link "spring中文文档" [ref=e396] [cursor=pointer]:
+                - /url: https://springdoc.cn/
+                - text: spring中文文档
+                - img [ref=e397]
+        - generic [ref=e399]:
+          - generic [ref=e400]: 关注公众号
+          - list [ref=e401]:
+            - listitem [ref=e402]:
+              - img [ref=e403]
+        - generic [ref=e404]:
+          - generic [ref=e405]: 更多
+          - list [ref=e406]:
+            - listitem [ref=e407]:
+              - link "Docusaurus" [ref=e408] [cursor=pointer]:
+                - /url: https://docusaurus.io
+                - text: Docusaurus
+                - img [ref=e409]
+            - listitem [ref=e411]:
+              - link "Gitee" [ref=e412] [cursor=pointer]:
+                - /url: https://gitee.com/xiaoym/knife4j
+                - text: Gitee
+                - img [ref=e413]
+            - listitem [ref=e415]:
+              - link "GitHub" [ref=e416] [cursor=pointer]:
+                - /url: https://github.com/xiaoymin/swagger-bootstrap-ui
+                - text: GitHub
+                - img [ref=e417]
+      - generic [ref=e420]: Apache License 2.0 | Copyright © 2018-2026-八一菜刀 浙ICP备18027673号-1

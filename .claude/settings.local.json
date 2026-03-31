@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:open.larkenterprise.com)",
+      "Bash(claude:*)",
+      "Bash(openspec new:*)",
+      "Bash(cmd /c taskkill /PID 147420 /F)",
+      "Bash(curl -v http://localhost:8080/health)",
+      "mcp__playwright__browser_navigate",
+      "WebSearch",
+      "Bash(git checkout:*)"
+    ]
+  }
+}
