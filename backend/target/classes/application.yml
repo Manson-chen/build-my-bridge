@@ -1,0 +1,177 @@
+spring:
+  application:
+    name: buildmybridge
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+
+  # 数据库配置（已禁用）
+  datasource:
+    url: jdbc:mysql://localhost:3306/buildmybridge?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+  # Redis 配置
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    timeout: 2000ms
+    database: 0
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: -1ms
+      shutdown-timeout: 100ms
+
+  # Jackson 配置
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+      indent-output: false
+    deserialization:
+      fail-on-unknown-properties: false
+    time-zone: UTC
+    default-property-inclusion: non_null
+
+  # 任务线程池
+  task:
+    execution:
+      pool:
+        core-size: 2
+        max-size: 10
+        queue-capacity: 100
+      thread-name-prefix: buildmybridge-async-
+    scheduling:
+      pool:
+        size: 5
+      thread-name-prefix: buildmybridge-schedule-
+
+# MyBatis-Plus 配置
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.buildmybridge.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    jdbc-type-for-null: NULL
+    call-setters-on-nulls: true
+
+# 日志配置
+logging:
+  level:
+    root: INFO
+    com.buildmybridge: DEBUG
+    org.springframework.security: DEBUG
+    org.springframework.web: INFO
+    org.springframework.boot.autoconfigure: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: logs/buildmybridge.log
+    max-size: 10MB
+    max-history: 30
+
+# 服务器配置
+server:
+  port: 8081
+  servlet:
+    context-path: /api
+  compression:
+    enabled: true
+    min-response-size: 1024
+
+# 飞书 OAuth 配置（使用环境变量覆盖）
+feishu:
+  app-id: ${FEISHU_APP_ID:}
+  app-secret: ${FEISHU_APP_SECRET:}
+  redirect-uri: http://localhost:8080/api/auth/callback
+
+# JWT 配置（使用环境变量覆盖）
+jwt:
+  secret: ${JWT_SECRET:your-secret-key-change-this-in-production}
+  expiration: 86400000  # 24 小时（毫秒）
+  refresh-expiration: 604800000  # 7 天（毫秒）
+
+# SpringDoc OpenAPI 配置（Knife4j 基础配置）
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: com.buildmybridge
+
+# Knife4j 增强配置
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+    enableSwaggerModels: true
+    swaggerModelsName: "数据模型"
+    enableDocumentManage: true
+    enableReload: true
+    enableAffix: false
+    enableCacheOpenApi: false
+    enableFooter: true
+    footerCustom: "<div style='text-align: center;'>BuildMyBridge © 2026</div>"
+    enableSearch: true
+    enableHomeCustom: false
+    enableRightMenuExtend: true
+    enableHost: false
+    enableHostText: ""
+    enableDynamicRequestUrl: true
+
+---
+# 开发环境配置
+spring:
+  config:
+    activate:
+      on-profile: dev
+  jpa:
+    show-sql: false
+
+server:
+  port: 8080
+
+---
+# 生产环境配置
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+  redis:
+    lettuce:
+      pool:
+        max-active: 16
+
+server:
+  port: 8080
+  compression:
+    enabled: true
+    min-response-size: 1024
+
+logging:
+  level:
+    root: WARN
+    com.buildmybridge: INFO

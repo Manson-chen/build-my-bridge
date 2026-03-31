@@ -1,0 +1,1217 @@
+2026-03-31 14:18:37 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 35900 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:18:37 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:18:37 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:18:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:18:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:18:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:18:39 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:18:39 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:18:39 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:20:13 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 149024 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:20:13 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:20:13 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:20:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:20:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:20:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:20:14 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:20:14 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:20:14 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:21:41 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 18728 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:21:41 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:21:41 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:21:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:21:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:21:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:21:43 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:21:43 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:21:43 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:23:49 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 101052 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:23:49 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:23:49 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:23:51 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:23:51 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:23:51 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:24:59 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 138996 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:24:59 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:24:59 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:25:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:25:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:25:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:25:01 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:25:01 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:25:01 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:25:09 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 145604 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:25:09 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:25:09 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:25:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:25:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:25:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:25:11 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:25:11 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:25:11 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:26:21 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 30376 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:26:21 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:26:21 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:26:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:26:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:26:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:26:23 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:26:23 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:26:23 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:28:18 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 45252 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:28:18 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:28:18 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:28:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:28:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:28:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:28:19 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:28:19 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:28:19 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:28:28 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 126324 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:28:28 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:28:28 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:28:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:28:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:28:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:28:30 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:28:30 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:28:30 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:31:05 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 101324 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:31:05 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:31:05 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:31:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:31:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:31:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:31:07 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:31:07 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:31:07 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:32:34 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 107096 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:32:34 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:32:34 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:32:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:32:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:32:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:32:36 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:32:36 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:32:36 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:34:01 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication using Java 21.0.1 with PID 148772 (D:\ai\build-my-bridge\backend\target\classes started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:34:01 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:34:01 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:34:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:34:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:34:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:34:02 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:34:02 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:34:02 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+2026-03-31 14:35:41 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication using Java 21.0.1 with PID 94680 (D:\ai\build-my-bridge\backend\target\classes started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:35:41 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:35:41 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:35:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:35:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:35:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:35:42 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:35:42 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:35:42 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+2026-03-31 14:36:10 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 143540 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:36:10 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:36:10 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:36:10 [main] DEBUG o.s.boot.SpringApplication - Loading source class com.buildmybridge.BuildMyBridgeApplication
+2026-03-31 14:36:10 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ceb80a1
+2026-03-31 14:36:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:36:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:36:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:36:12 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:36:12 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:36:12 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:36:40 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 92532 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:36:40 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:36:40 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:36:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:36:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:36:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:36:42 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:36:42 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:36:42 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:37:27 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 108240 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:37:27 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:37:27 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:37:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:37:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:37:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:37:30 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:37:30 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:37:30 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:38:11 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 118548 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:38:11 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:38:11 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:38:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 14:38:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 14:38:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2026-03-31 14:38:13 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+2026-03-31 14:38:13 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:38:13 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBeanFromAttributes(FactoryBeanRegistrySupport.java:86)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:838)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:532)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.buildmybridge.BuildMyBridgeApplication.main(BuildMyBridgeApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+2026-03-31 14:41:30 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 9664 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:41:30 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:41:30 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:41:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 14:41:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 14:41:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 14:41:32 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 14:41:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2278 ms
+2026-03-31 14:41:32 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'jwtAuthenticationFilter': No qualifying bean of type 'com.buildmybridge.security.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-03-31 14:41:32 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-03-31 14:41:32 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:41:32 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtAuthenticationFilter in com.buildmybridge.config.SecurityConfig required a bean of type 'com.buildmybridge.security.JwtAuthenticationFilter' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.buildmybridge.security.JwtAuthenticationFilter' in your configuration.
+
+2026-03-31 14:41:42 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 143912 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:41:42 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:41:42 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:41:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 14:41:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 14:41:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 14:41:44 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 14:41:44 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2048 ms
+2026-03-31 14:41:44 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'jwtAuthenticationFilter': No qualifying bean of type 'com.buildmybridge.security.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-03-31 14:41:44 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-03-31 14:41:44 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:41:44 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtAuthenticationFilter in com.buildmybridge.config.SecurityConfig required a bean of type 'com.buildmybridge.security.JwtAuthenticationFilter' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.buildmybridge.security.JwtAuthenticationFilter' in your configuration.
+
+2026-03-31 14:42:52 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 26180 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:42:52 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:42:52 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:42:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 14:42:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 14:42:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 14:42:55 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 14:42:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2634 ms
+2026-03-31 14:42:55 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 14:42:55 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'stringRedisTemplate' defined in class path resource [com/buildmybridge/config/RedisConfig.class]: Unsatisfied dependency expressed through method 'stringRedisTemplate' parameter 0: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-03-31 14:42:55 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-03-31 14:42:55 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:42:55 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method stringRedisTemplate in com.buildmybridge.config.RedisConfig required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2026-03-31 14:44:18 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 108440 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:44:18 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:44:18 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:44:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 14:44:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 14:44:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 14:44:20 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 14:44:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2292 ms
+2026-03-31 14:44:20 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 14:44:21 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-03-31 14:44:22 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@357f6391, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@689faf79, org.springframework.security.web.context.SecurityContextHolderFilter@5aa76ad2, org.springframework.security.web.header.HeaderWriterFilter@f882465, org.springframework.web.filter.CorsFilter@582e9152, org.springframework.security.web.authentication.logout.LogoutFilter@3520958b, com.buildmybridge.security.JwtAuthenticationFilter@4997552e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25791d40, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@448c92fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a31ca20, org.springframework.security.web.session.SessionManagementFilter@7f0f84d4, org.springframework.security.web.access.ExceptionTranslationFilter@6dcab9d9, org.springframework.security.web.access.intercept.AuthorizationFilter@7a04f730]
+2026-03-31 14:44:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-03-31 14:44:23 [main] INFO  c.b.BuildMyBridgeApplication - Started BuildMyBridgeApplication in 6.219 seconds (process running for 7.279)
+2026-03-31 14:44:28 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 14:44:28 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 14:44:28 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-31 14:44:28 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /health
+2026-03-31 14:44:28 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 14:44:28 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/health' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-31 14:44:28 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 14:44:28 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 14:44:28 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 14:44:28 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 14:45:39 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 149936 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:45:39 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:45:39 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:45:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 14:45:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 14:45:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 14:45:42 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 14:45:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2300 ms
+2026-03-31 14:45:42 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 14:45:42 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-03-31 14:45:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2fd1ad8a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@357f6391, org.springframework.security.web.context.SecurityContextHolderFilter@26e8ff8c, org.springframework.security.web.header.HeaderWriterFilter@5a14e60d, org.springframework.web.filter.CorsFilter@689faf79, org.springframework.security.web.authentication.logout.LogoutFilter@756b2d90, com.buildmybridge.security.JwtAuthenticationFilter@4997552e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@590d6c76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25791d40, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@582e9152, org.springframework.security.web.session.SessionManagementFilter@4966bab1, org.springframework.security.web.access.ExceptionTranslationFilter@18dcb8a7, org.springframework.security.web.access.intercept.AuthorizationFilter@5ec88f9e]
+2026-03-31 14:45:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-03-31 14:45:44 [main] INFO  c.b.BuildMyBridgeApplication - Started BuildMyBridgeApplication in 5.877 seconds (process running for 6.779)
+2026-03-31 14:45:52 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 144652 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:45:52 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:45:52 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:45:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 14:45:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 14:45:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 14:45:54 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 14:45:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2192 ms
+2026-03-31 14:45:54 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 14:45:55 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-03-31 14:45:55 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@357f6391, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@689faf79, org.springframework.security.web.context.SecurityContextHolderFilter@5aa76ad2, org.springframework.security.web.header.HeaderWriterFilter@f882465, org.springframework.web.filter.CorsFilter@582e9152, org.springframework.security.web.authentication.logout.LogoutFilter@3520958b, com.buildmybridge.security.JwtAuthenticationFilter@4997552e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25791d40, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@448c92fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a31ca20, org.springframework.security.web.session.SessionManagementFilter@7f0f84d4, org.springframework.security.web.access.ExceptionTranslationFilter@6dcab9d9, org.springframework.security.web.access.intercept.AuthorizationFilter@7a04f730]
+2026-03-31 14:45:56 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-31 14:45:56 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:45:56 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-31 14:46:47 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 14:46:47 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 14:46:47 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-03-31 14:46:47 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /health
+2026-03-31 14:46:47 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 14:46:47 [http-nio-8080-exec-2] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/health' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-31 14:46:47 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 14:46:47 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 14:46:47 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 14:46:47 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 14:48:00 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui.html
+2026-03-31 14:48:00 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 14:48:00 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 14:48:00 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 14:48:00 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 14:48:00 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 14:48:25 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /health
+2026-03-31 14:48:25 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 14:48:25 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 14:48:25 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 14:48:25 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 14:48:25 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 14:48:51 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication using Java 21.0.1 with PID 102196 (D:\ai\build-my-bridge\backend\target\classes started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:48:51 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:48:51 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:48:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 14:48:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 14:48:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 14:48:53 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 14:48:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1490 ms
+2026-03-31 14:48:53 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 14:48:53 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-03-31 14:48:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e6748ae, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28f154cc, org.springframework.security.web.context.SecurityContextHolderFilter@9b3be1c, org.springframework.security.web.header.HeaderWriterFilter@175581eb, org.springframework.web.filter.CorsFilter@3030836d, org.springframework.security.web.authentication.logout.LogoutFilter@79ab97fd, com.buildmybridge.security.JwtAuthenticationFilter@186d8a71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13516600, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35d7386b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6af78a48, org.springframework.security.web.session.SessionManagementFilter@283ab206, org.springframework.security.web.access.ExceptionTranslationFilter@5c1b89ac, org.springframework.security.web.access.intercept.AuthorizationFilter@5f193335]
+2026-03-31 14:48:54 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-31 14:48:54 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:48:54 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-31 14:50:11 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication using Java 21.0.1 with PID 75864 (D:\ai\build-my-bridge\backend\target\classes started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:50:11 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:50:11 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:50:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 14:50:13 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 14:50:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 14:50:13 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 14:50:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1350 ms
+2026-03-31 14:50:13 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 14:50:13 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-03-31 14:50:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e6748ae, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28f154cc, org.springframework.security.web.context.SecurityContextHolderFilter@9b3be1c, org.springframework.security.web.header.HeaderWriterFilter@175581eb, org.springframework.web.filter.CorsFilter@3030836d, org.springframework.security.web.authentication.logout.LogoutFilter@79ab97fd, com.buildmybridge.security.JwtAuthenticationFilter@186d8a71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13516600, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35d7386b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6af78a48, org.springframework.security.web.session.SessionManagementFilter@283ab206, org.springframework.security.web.access.ExceptionTranslationFilter@5c1b89ac, org.springframework.security.web.access.intercept.AuthorizationFilter@5f193335]
+2026-03-31 14:50:13 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-31 14:50:13 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 14:50:13 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-31 14:53:15 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication using Java 21.0.1 with PID 118344 (D:\ai\build-my-bridge\backend\target\classes started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 14:53:15 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 14:53:15 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 14:53:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 14:53:17 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 14:53:17 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 14:53:17 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 14:53:17 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1339 ms
+2026-03-31 14:53:17 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 14:53:17 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-03-31 14:53:17 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ea1aa52, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74123110, org.springframework.security.web.context.SecurityContextHolderFilter@5c1b89ac, org.springframework.security.web.header.HeaderWriterFilter@5bf4764d, org.springframework.web.filter.CorsFilter@5ed0b4e3, org.springframework.security.web.authentication.logout.LogoutFilter@407b8435, com.buildmybridge.security.JwtAuthenticationFilter@1fecfaea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@175581eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b79c8ff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79ab97fd, org.springframework.security.web.session.SessionManagementFilter@16f15ae9, org.springframework.security.web.access.ExceptionTranslationFilter@359ceb13, org.springframework.security.web.access.intercept.AuthorizationFilter@3111631d]
+2026-03-31 14:53:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-03-31 14:53:18 [main] INFO  c.b.BuildMyBridgeApplication - Started BuildMyBridgeApplication in 2.927 seconds (process running for 3.568)
+2026-03-31 14:53:38 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 14:53:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 14:53:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-03-31 14:53:38 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /health
+2026-03-31 14:53:38 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 14:53:38 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/health' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-31 14:53:38 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 14:53:38 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 14:53:38 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 14:53:38 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 14:56:58 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /health
+2026-03-31 14:57:07 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 14:57:07 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 14:57:17 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 14:57:17 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 14:57:17 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:38:22 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 12368 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 15:38:22 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 15:38:22 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 15:38:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 15:38:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 15:38:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2026-03-31 15:38:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 15:38:25 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 15:38:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 15:38:25 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 15:38:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2326 ms
+2026-03-31 15:38:25 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 15:38:26 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-03-31 15:38:27 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71ad959b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d7c9811, org.springframework.security.web.context.SecurityContextHolderFilter@4751cd3, org.springframework.security.web.header.HeaderWriterFilter@210a26b, org.springframework.web.filter.CorsFilter@3b362f1, org.springframework.security.web.authentication.logout.LogoutFilter@7b5833ee, com.buildmybridge.security.JwtAuthenticationFilter@6bbab114, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1aac0a47, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b3ad7ca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6451a288, org.springframework.security.web.session.SessionManagementFilter@72324965, org.springframework.security.web.access.ExceptionTranslationFilter@7686f701, org.springframework.security.web.access.intercept.AuthorizationFilter@2109a691]
+2026-03-31 15:38:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-03-31 15:38:28 [main] INFO  c.b.BuildMyBridgeApplication - Started BuildMyBridgeApplication in 6.545 seconds (process running for 7.414)
+2026-03-31 15:39:40 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication using Java 21.0.1 with PID 61024 (D:\ai\build-my-bridge\backend\target\classes started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 15:39:40 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 15:39:40 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 15:39:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 15:39:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 15:39:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2026-03-31 15:39:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 15:39:41 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 15:39:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 15:39:41 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 15:39:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1500 ms
+2026-03-31 15:39:41 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 15:39:42 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-03-31 15:39:42 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@25d0b918, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9bf63d2, org.springframework.security.web.context.SecurityContextHolderFilter@1bdafb01, org.springframework.security.web.header.HeaderWriterFilter@3cf8a235, org.springframework.web.filter.CorsFilter@7ffcb232, org.springframework.security.web.authentication.logout.LogoutFilter@102af1bb, com.buildmybridge.security.JwtAuthenticationFilter@2dfeb141, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@500ec769, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37806be6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f53fc38, org.springframework.security.web.session.SessionManagementFilter@5b3755f4, org.springframework.security.web.access.ExceptionTranslationFilter@bc8d68b, org.springframework.security.web.access.intercept.AuthorizationFilter@6f68756d]
+2026-03-31 15:39:43 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-31 15:39:43 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 15:39:43 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-31 15:40:17 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication using Java 21.0.1 with PID 129452 (D:\ai\build-my-bridge\backend\target\classes started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 15:40:17 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 15:40:17 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 15:40:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 15:40:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 15:40:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2026-03-31 15:40:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-03-31 15:40:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 15:40:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 15:40:18 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 15:40:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1498 ms
+2026-03-31 15:40:18 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 15:40:19 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-03-31 15:40:19 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@571d0925, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54e0f76f, org.springframework.security.web.context.SecurityContextHolderFilter@fd87c22, org.springframework.security.web.header.HeaderWriterFilter@334b392d, org.springframework.web.filter.CorsFilter@3fe8ad3f, org.springframework.security.web.authentication.logout.LogoutFilter@173b1af1, com.buildmybridge.security.JwtAuthenticationFilter@498c535d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ff463bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b9c9b8b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7462ba4b, org.springframework.security.web.session.SessionManagementFilter@7bce9ce4, org.springframework.security.web.access.ExceptionTranslationFilter@5273143e, org.springframework.security.web.access.intercept.AuthorizationFilter@5feb82b3]
+2026-03-31 15:40:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/api'
+2026-03-31 15:40:20 [main] INFO  c.b.BuildMyBridgeApplication - Started BuildMyBridgeApplication in 3.552 seconds (process running for 4.149)
+2026-03-31 15:41:20 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 15:41:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 15:41:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-03-31 15:41:20 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /health
+2026-03-31 15:41:20 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:41:20 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/health' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-31 15:41:20 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:41:20 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 15:41:20 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:41:20 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:41:32 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui.html
+2026-03-31 15:41:32 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:41:32 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:41:32 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 15:41:32 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:41:32 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:41:32 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs
+2026-03-31 15:41:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:41:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:41:32 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 15:41:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:41:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:42:41 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui.html
+2026-03-31 15:42:41 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:42:41 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:42:41 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 15:42:41 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:42:41 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:42:44 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui.html
+2026-03-31 15:42:44 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:42:44 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:42:44 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 15:42:44 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:42:44 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:42:47 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 15:42:47 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 15:42:47 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-03-31 15:42:47 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui.html
+2026-03-31 15:42:50 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:42:50 [http-nio-8081-exec-2] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/swagger-ui.html' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-31 15:42:50 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:42:50 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 15:42:50 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:42:50 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:58:07 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication using Java 21.0.1 with PID 151264 (D:\ai\build-my-bridge\backend\target\classes started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 15:58:07 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 15:58:07 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 15:58:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 15:58:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 15:58:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2026-03-31 15:58:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-03-31 15:58:08 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 15:58:08 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 15:58:08 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 15:58:08 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1641 ms
+2026-03-31 15:58:08 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 15:58:09 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-03-31 15:58:09 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@b8b2184, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@299a43d9, org.springframework.security.web.context.SecurityContextHolderFilter@223cbf0d, org.springframework.security.web.header.HeaderWriterFilter@5d5574c7, org.springframework.web.filter.CorsFilter@ccd000e, org.springframework.security.web.authentication.logout.LogoutFilter@4b360972, com.buildmybridge.security.JwtAuthenticationFilter@601eb4af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ddb302, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b7ab7ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fa5c8cf, org.springframework.security.web.session.SessionManagementFilter@4ab455e2, org.springframework.security.web.access.ExceptionTranslationFilter@25d9291a, org.springframework.security.web.access.intercept.AuthorizationFilter@33430fc]
+2026-03-31 15:58:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/api'
+2026-03-31 15:58:10 [main] INFO  c.b.BuildMyBridgeApplication - Started BuildMyBridgeApplication in 3.546 seconds (process running for 4.32)
+2026-03-31 15:58:56 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 15:58:56 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 15:58:56 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-03-31 15:58:56 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /doc.html
+2026-03-31 15:58:59 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:58:59 [http-nio-8081-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/doc.html' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-31 15:58:59 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 15:58:59 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 15:58:59 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 15:58:59 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 16:00:51 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /doc.html
+2026-03-31 16:00:51 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:00:51 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 16:00:51 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 16:00:51 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:00:51 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 16:00:58 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication using Java 21.0.1 with PID 88680 (D:\ai\build-my-bridge\backend\target\classes started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 16:00:58 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 16:00:58 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 16:00:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 16:00:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 16:00:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2026-03-31 16:01:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-03-31 16:01:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 16:01:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 16:01:00 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 16:01:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1852 ms
+2026-03-31 16:01:00 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 16:01:01 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-03-31 16:01:01 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@33430fc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45424c0, org.springframework.security.web.context.SecurityContextHolderFilter@4ab455e2, org.springframework.security.web.header.HeaderWriterFilter@5abbb273, org.springframework.web.filter.CorsFilter@22ae32ba, org.springframework.security.web.authentication.logout.LogoutFilter@49e0b123, com.buildmybridge.security.JwtAuthenticationFilter@22ead351, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ac685ef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@223cbf0d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b8b2184, org.springframework.security.web.session.SessionManagementFilter@1aaf46e6, org.springframework.security.web.access.ExceptionTranslationFilter@70022d44, org.springframework.security.web.access.intercept.AuthorizationFilter@523abba9]
+2026-03-31 16:01:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/api'
+2026-03-31 16:01:02 [main] INFO  c.b.BuildMyBridgeApplication - Started BuildMyBridgeApplication in 4.02 seconds (process running for 4.646)
+2026-03-31 16:01:04 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 16:01:04 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 16:01:04 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-31 16:01:04 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /doc.html
+2026-03-31 16:01:04 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-2] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/doc.html' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-31 16:01:04 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /doc.html
+2026-03-31 16:01:04 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/app.8a48e86b.css
+2026-03-31 16:01:04 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/app.8a48e86b.css
+2026-03-31 16:01:04 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-vendors.f24a310a.css
+2026-03-31 16:01:04 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-vendors.d51cf6f8.js
+2026-03-31 16:01:04 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/app.b0c0d7df.js
+2026-03-31 16:01:04 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-75464e7e.8fb93ba5.css
+2026-03-31 16:01:04 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-d7d5f59c.a9ffbfcb.css
+2026-03-31 16:01:04 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-vendors.d51cf6f8.js
+2026-03-31 16:01:04 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-vendors.f24a310a.css
+2026-03-31 16:01:04 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/app.b0c0d7df.js
+2026-03-31 16:01:04 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-75464e7e.8fb93ba5.css
+2026-03-31 16:01:04 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-d7d5f59c.a9ffbfcb.css
+2026-03-31 16:01:04 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-069eb437.355c4fb0.js
+2026-03-31 16:01:04 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-0d102d5a.b2bddffc.js
+2026-03-31 16:01:04 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-069eb437.355c4fb0.js
+2026-03-31 16:01:04 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-0d102d5a.b2bddffc.js
+2026-03-31 16:01:04 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-0fd67716.d57e2c41.js
+2026-03-31 16:01:04 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-260d712a.390177fe.js
+2026-03-31 16:01:04 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-2d0af44e.392afcd6.js
+2026-03-31 16:01:04 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-2d0bd799.eb48b7f1.js
+2026-03-31 16:01:04 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-0fd67716.d57e2c41.js
+2026-03-31 16:01:04 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-2d0af44e.392afcd6.js
+2026-03-31 16:01:04 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-260d712a.390177fe.js
+2026-03-31 16:01:04 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-2d0bd799.eb48b7f1.js
+2026-03-31 16:01:04 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-2d0da532.591ad7fc.js
+2026-03-31 16:01:04 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-2d0da532.591ad7fc.js
+2026-03-31 16:01:04 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-3ec4aaa8.a79d19f8.js
+2026-03-31 16:01:04 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-3b888a65.8737ce4f.js
+2026-03-31 16:01:04 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-3ec4aaa8.a79d19f8.js
+2026-03-31 16:01:04 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-3b888a65.8737ce4f.js
+2026-03-31 16:01:04 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-589faee0.5bfd1708.js
+2026-03-31 16:01:04 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-589faee0.5bfd1708.js
+2026-03-31 16:01:04 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-735c675c.5b409314.js
+2026-03-31 16:01:04 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-735c675c.5b409314.js
+2026-03-31 16:01:04 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-75464e7e.b130271b.js
+2026-03-31 16:01:04 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-adb9e944.2c7f24fe.js
+2026-03-31 16:01:04 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-d7d5f59c.e61130f3.js
+2026-03-31 16:01:04 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:04 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-75464e7e.b130271b.js
+2026-03-31 16:01:04 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-adb9e944.2c7f24fe.js
+2026-03-31 16:01:04 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-d7d5f59c.e61130f3.js
+2026-03-31 16:01:05 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2026-03-31 16:01:05 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:05 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 16:01:05 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 16:01:05 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:05 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 16:01:05 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2026-03-31 16:01:05 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:05 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2026-03-31 16:01:05 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/default
+2026-03-31 16:01:05 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:05 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/default
+2026-03-31 16:01:05 [http-nio-8081-exec-8] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 338 ms
+2026-03-31 16:01:09 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-d7d5f59c.e61130f3.js
+2026-03-31 16:01:09 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-d7d5f59c.a9ffbfcb.css
+2026-03-31 16:01:09 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:09 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:09 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-75464e7e.8fb93ba5.css
+2026-03-31 16:01:09 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-adb9e944.2c7f24fe.js
+2026-03-31 16:01:09 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:09 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-069eb437.355c4fb0.js
+2026-03-31 16:01:09 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:09 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:09 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-75464e7e.b130271b.js
+2026-03-31 16:01:09 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:09 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-d7d5f59c.a9ffbfcb.css
+2026-03-31 16:01:09 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-75464e7e.8fb93ba5.css
+2026-03-31 16:01:09 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-069eb437.355c4fb0.js
+2026-03-31 16:01:09 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-adb9e944.2c7f24fe.js
+2026-03-31 16:01:09 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-d7d5f59c.e61130f3.js
+2026-03-31 16:01:09 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-75464e7e.b130271b.js
+2026-03-31 16:01:09 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2026-03-31 16:01:09 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:09 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 16:01:09 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 16:01:09 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:09 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 16:01:09 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-3b888a65.8737ce4f.js
+2026-03-31 16:01:09 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-3ec4aaa8.a79d19f8.js
+2026-03-31 16:01:09 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-2d0af44e.392afcd6.js
+2026-03-31 16:01:09 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:09 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:09 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:09 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-2d0af44e.392afcd6.js
+2026-03-31 16:01:09 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-3ec4aaa8.a79d19f8.js
+2026-03-31 16:01:09 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-3b888a65.8737ce4f.js
+2026-03-31 16:01:11 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-0d102d5a.b2bddffc.js
+2026-03-31 16:01:11 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-589faee0.5bfd1708.js
+2026-03-31 16:01:11 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-0fd67716.d57e2c41.js
+2026-03-31 16:01:11 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:11 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:11 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:11 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-0d102d5a.b2bddffc.js
+2026-03-31 16:01:11 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-0fd67716.d57e2c41.js
+2026-03-31 16:01:11 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-589faee0.5bfd1708.js
+2026-03-31 16:01:12 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/health
+2026-03-31 16:01:12 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:12 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/health
+2026-03-31 16:01:12 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-735c675c.5b409314.js
+2026-03-31 16:01:12 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:01:12 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-735c675c.5b409314.js
+2026-03-31 16:02:38 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication using Java 21.0.1 with PID 113868 (D:\ai\build-my-bridge\backend\target\classes started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 16:02:38 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 16:02:38 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 16:02:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 16:02:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 16:02:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2026-03-31 16:02:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-03-31 16:02:40 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 16:02:40 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 16:02:40 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 16:02:40 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1549 ms
+2026-03-31 16:02:40 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 16:02:40 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-03-31 16:02:40 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1e6cb932, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6921cfa, org.springframework.security.web.context.SecurityContextHolderFilter@459bf87c, org.springframework.security.web.header.HeaderWriterFilter@fe08eaf, org.springframework.web.filter.CorsFilter@523abba9, org.springframework.security.web.authentication.logout.LogoutFilter@6654ca0d, com.buildmybridge.security.JwtAuthenticationFilter@68af87ad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1aaf46e6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@391d28ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e090aaa, org.springframework.security.web.session.SessionManagementFilter@6533629, org.springframework.security.web.access.ExceptionTranslationFilter@5909ae90, org.springframework.security.web.access.intercept.AuthorizationFilter@3ba46845]
+2026-03-31 16:02:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/api'
+2026-03-31 16:02:41 [main] INFO  c.b.BuildMyBridgeApplication - Started BuildMyBridgeApplication in 3.488 seconds (process running for 4.133)
+2026-03-31 16:02:47 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 16:02:47 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 16:02:47 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-03-31 16:02:47 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /doc.html
+2026-03-31 16:02:47 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/doc.html' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-31 16:02:47 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /doc.html
+2026-03-31 16:02:47 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/app.8a48e86b.css
+2026-03-31 16:02:47 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/app.b0c0d7df.js
+2026-03-31 16:02:47 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-75464e7e.8fb93ba5.css
+2026-03-31 16:02:47 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-vendors.f24a310a.css
+2026-03-31 16:02:47 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-vendors.d51cf6f8.js
+2026-03-31 16:02:47 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-d7d5f59c.a9ffbfcb.css
+2026-03-31 16:02:47 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-vendors.d51cf6f8.js
+2026-03-31 16:02:47 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/app.b0c0d7df.js
+2026-03-31 16:02:47 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/app.8a48e86b.css
+2026-03-31 16:02:47 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-vendors.f24a310a.css
+2026-03-31 16:02:47 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-75464e7e.8fb93ba5.css
+2026-03-31 16:02:47 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-069eb437.355c4fb0.js
+2026-03-31 16:02:47 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-d7d5f59c.a9ffbfcb.css
+2026-03-31 16:02:47 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-0d102d5a.b2bddffc.js
+2026-03-31 16:02:47 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-069eb437.355c4fb0.js
+2026-03-31 16:02:47 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-0fd67716.d57e2c41.js
+2026-03-31 16:02:47 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-0d102d5a.b2bddffc.js
+2026-03-31 16:02:47 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-0fd67716.d57e2c41.js
+2026-03-31 16:02:47 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-260d712a.390177fe.js
+2026-03-31 16:02:47 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-2d0bd799.eb48b7f1.js
+2026-03-31 16:02:47 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-2d0af44e.392afcd6.js
+2026-03-31 16:02:47 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-2d0da532.591ad7fc.js
+2026-03-31 16:02:47 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-2d0af44e.392afcd6.js
+2026-03-31 16:02:47 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-260d712a.390177fe.js
+2026-03-31 16:02:47 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-2d0bd799.eb48b7f1.js
+2026-03-31 16:02:47 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-2d0da532.591ad7fc.js
+2026-03-31 16:02:47 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-3b888a65.8737ce4f.js
+2026-03-31 16:02:47 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-3ec4aaa8.a79d19f8.js
+2026-03-31 16:02:47 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-589faee0.5bfd1708.js
+2026-03-31 16:02:47 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-589faee0.5bfd1708.js
+2026-03-31 16:02:47 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-735c675c.5b409314.js
+2026-03-31 16:02:47 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-3b888a65.8737ce4f.js
+2026-03-31 16:02:47 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-3ec4aaa8.a79d19f8.js
+2026-03-31 16:02:47 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-735c675c.5b409314.js
+2026-03-31 16:02:47 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-adb9e944.2c7f24fe.js
+2026-03-31 16:02:47 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-75464e7e.b130271b.js
+2026-03-31 16:02:47 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-adb9e944.2c7f24fe.js
+2026-03-31 16:02:47 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-75464e7e.b130271b.js
+2026-03-31 16:02:47 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-d7d5f59c.e61130f3.js
+2026-03-31 16:02:47 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:47 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-d7d5f59c.e61130f3.js
+2026-03-31 16:02:48 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2026-03-31 16:02:48 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:48 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2026-03-31 16:02:48 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2026-03-31 16:02:48 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:48 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 16:02:48 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 16:02:48 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:48 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 16:02:48 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/default
+2026-03-31 16:02:48 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:48 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/default
+2026-03-31 16:02:48 [http-nio-8081-exec-5] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 336 ms
+2026-03-31 16:02:48 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-d7d5f59c.a9ffbfcb.css
+2026-03-31 16:02:48 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-75464e7e.8fb93ba5.css
+2026-03-31 16:02:48 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-adb9e944.2c7f24fe.js
+2026-03-31 16:02:48 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-069eb437.355c4fb0.js
+2026-03-31 16:02:48 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-d7d5f59c.e61130f3.js
+2026-03-31 16:02:48 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-75464e7e.b130271b.js
+2026-03-31 16:02:48 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:48 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:48 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:48 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:48 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:48 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:48 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-75464e7e.b130271b.js
+2026-03-31 16:02:48 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-d7d5f59c.e61130f3.js
+2026-03-31 16:02:48 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-069eb437.355c4fb0.js
+2026-03-31 16:02:48 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-75464e7e.8fb93ba5.css
+2026-03-31 16:02:48 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-adb9e944.2c7f24fe.js
+2026-03-31 16:02:48 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-d7d5f59c.a9ffbfcb.css
+2026-03-31 16:02:48 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-3ec4aaa8.a79d19f8.js
+2026-03-31 16:02:48 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-2d0af44e.392afcd6.js
+2026-03-31 16:02:48 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-3b888a65.8737ce4f.js
+2026-03-31 16:02:48 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:48 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:48 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:48 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-2d0af44e.392afcd6.js
+2026-03-31 16:02:48 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-3ec4aaa8.a79d19f8.js
+2026-03-31 16:02:48 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-3b888a65.8737ce4f.js
+2026-03-31 16:02:51 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-0fd67716.d57e2c41.js
+2026-03-31 16:02:51 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-589faee0.5bfd1708.js
+2026-03-31 16:02:51 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-0d102d5a.b2bddffc.js
+2026-03-31 16:02:51 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:51 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:51 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 16:02:51 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-589faee0.5bfd1708.js
+2026-03-31 16:02:51 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-0d102d5a.b2bddffc.js
+2026-03-31 16:02:51 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-0fd67716.d57e2c41.js
