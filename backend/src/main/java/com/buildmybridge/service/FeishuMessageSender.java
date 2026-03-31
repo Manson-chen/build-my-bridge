@@ -3,6 +3,9 @@ package com.buildmybridge.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -48,19 +51,21 @@ public class FeishuMessageSender {
             requestBody.put("content", objectMapper.writeValueAsString(contentMap));
 
             // 设置请求头
-            Map<String, String> headers = new HashMap<>();
-            headers.put("Authorization", "Bearer " + tenantAccessToken);
-            headers.put("Content-Type", "application/json");
+            HttpHeaders headers = new HttpHeaders();
+            headers.set("Authorization", "Bearer " + tenantAccessToken);
+            headers.setContentType(MediaType.APPLICATION_JSON);
+
+            HttpEntity<Map<String, Object>> entity = new HttpEntity<>(requestBody, headers);
 
             // 发送请求
-            String response = restTemplate.postForObject(
+            org.springframework.http.ResponseEntity<String> response = restTemplate.postForEntity(
                     FEISHU_MESSAGE_SEND_URL,
-                    requestBody,
+                    entity,
                     String.class
             );
 
             // 解析响应
-            Map<String, Object> responseMap = objectMapper.readValue(response, Map.class);
+            Map<String, Object> responseMap = objectMapper.readValue(response.getBody(), Map.class);
             Integer code = (Integer) responseMap.get("code");
 
             if (code != 0) {
@@ -98,19 +103,21 @@ public class FeishuMessageSender {
             requestBody.put("content", cardJson);
 
             // 设置请求头
-            Map<String, String> headers = new HashMap<>();
-            headers.put("Authorization", "Bearer " + tenantAccessToken);
-            headers.put("Content-Type", "application/json");
+            HttpHeaders headers = new HttpHeaders();
+            headers.set("Authorization", "Bearer " + tenantAccessToken);
+            headers.setContentType(MediaType.APPLICATION_JSON);
+
+            HttpEntity<Map<String, Object>> entity = new HttpEntity<>(requestBody, headers);
 
             // 发送请求
-            String response = restTemplate.postForObject(
+            org.springframework.http.ResponseEntity<String> response = restTemplate.postForEntity(
                     FEISHU_MESSAGE_SEND_URL,
-                    requestBody,
+                    entity,
                     String.class
             );
 
             // 解析响应
-            Map<String, Object> responseMap = objectMapper.readValue(response, Map.class);
+            Map<String, Object> responseMap = objectMapper.readValue(response.getBody(), Map.class);
             Integer code = (Integer) responseMap.get("code");
 
             if (code != 0) {
@@ -155,19 +162,21 @@ public class FeishuMessageSender {
             requestBody.put("content", objectMapper.writeValueAsString(contentMap));
 
             // 设置请求头
-            Map<String, String> headers = new HashMap<>();
-            headers.put("Authorization", "Bearer " + tenantAccessToken);
-            headers.put("Content-Type", "application/json");
+            HttpHeaders headers = new HttpHeaders();
+            headers.set("Authorization", "Bearer " + tenantAccessToken);
+            headers.setContentType(MediaType.APPLICATION_JSON);
+
+            HttpEntity<Map<String, Object>> entity = new HttpEntity<>(requestBody, headers);
 
             // 发送请求
-            String response = restTemplate.postForObject(
+            org.springframework.http.ResponseEntity<String> response = restTemplate.postForEntity(
                     replyUrl,
-                    requestBody,
+                    entity,
                     String.class
             );
 
             // 解析响应
-            Map<String, Object> responseMap = objectMapper.readValue(response, Map.class);
+            Map<String, Object> responseMap = objectMapper.readValue(response.getBody(), Map.class);
             Integer code = (Integer) responseMap.get("code");
 
             if (code != 0) {

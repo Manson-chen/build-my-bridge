@@ -1,17 +1,20 @@
 package com.buildmybridge.service;
 
+import com.buildmybridge.dto.BotWithStatus;
 import com.buildmybridge.entity.BotAccount;
 import com.buildmybridge.mapper.BotAccountMapper;
+import com.buildmybridge.utils.MD5Util;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.time.LocalDateTime;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * 机器人账户服务
@@ -20,6 +23,9 @@ import java.util.Map;
 @Slf4j
 @Service
 public class BotAccountService extends ServiceImpl<BotAccountMapper, BotAccount> {
+
+    @Autowired
+    private FeishuWSConnectionManager wsConnectionManager;
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
@@ -37,7 +43,7 @@ public class BotAccountService extends ServiceImpl<BotAccountMapper, BotAccount>
             bot.setBotType("FEISHU");
             bot.setBotName(botName);
             bot.setEnabled(true);
-            bot.setCreatedAt(new Date());
+            bot.setCreatedAt(LocalDateTime.now());
 
             // 保存配置到 JSON
             Map<String, String> config = new HashMap<>();
@@ -47,6 +53,14 @@ public class BotAccountService extends ServiceImpl<BotAccountMapper, BotAccount>
 
             this.save(bot);
             log.info("Created bot account: {} with id: {}", botName, bot.getId());
+
+            // 异步创建 WebSocket 连接
+            wsConnectionManager.createConnection(
+                    String.valueOf(bot.getId()),
+                    appId,
+                    appSecret
+            );
+
             return bot;
         } catch (Exception e) {
             log.error("Failed to create bot account", e);
@@ -79,6 +93,15 @@ public class BotAccountService extends ServiceImpl<BotAccountMapper, BotAccount>
 
             this.updateById(bot);
             log.info("Updated bot account: {} with id: {}", botName, botId);
+
+            // 关闭旧连接并创建新连接
+            wsConnectionManager.closeConnection(String.valueOf(botId));
+            wsConnectionManager.createConnection(
+                    String.valueOf(botId),
+                    appId,
+                    appSecret
+            );
+
             return bot;
         } catch (Exception e) {
             log.error("Failed to update bot account", e);
@@ -114,7 +137,14 @@ public class BotAccountService extends ServiceImpl<BotAccountMapper, BotAccount>
      * @return 是否删除成功
      */
     public boolean deleteBot(Long botId) {
-        return this.removeById(botId);
+        try {
+            // 关闭 WebSocket 连接
+            wsConnectionManager.closeConnection(String.valueOf(botId));
+            return this.removeById(botId);
+        } catch (Exception e) {
+            log.error("Failed to delete bot account", e);
+            return false;
+        }
     }
 
     /**
@@ -134,24 +164,27 @@ public class BotAccountService extends ServiceImpl<BotAccountMapper, BotAccount>
     }
 
     /**
-     * MD5 加密工具类
+     * 获取机器人列表及其连接状态
+     *
+     * @return 包含状态的机器人列表
      */
-    public static class MD5Util {
-        public static String md5(String input) {
-            try {
-                java.security.MessageDigest md = java.security.MessageDigest.getInstance("MD5");
-                byte[] messageDigest = md.digest(input.getBytes());
-                StringBuilder hexString = new StringBuilder();
-                for (byte b : messageDigest) {
-                    String hex = Integer.toHexString(0xff & b);
-                    if (hex.length() == 1) hexString.append('0');
-                    hexString.append(hex);
-                }
-                return hexString.toString();
-            } catch (Exception e) {
-                log.error("MD5 encryption failed", e);
-                return input;
-            }
-        }
+    public List<BotWithStatus> getBotsWithStatus() {
+        List<BotAccount> bots = this.list();
+        return bots.stream().map(bot -> {
+            BotWithStatus botStatus = new BotWithStatus();
+            botStatus.setBot(bot);
+            botStatus.setConnectionStatus(wsConnectionManager.getConnectionStatus(String.valueOf(bot.getId())));
+            return botStatus;
+        }).collect(Collectors.toList());
+    }
+
+    /**
+     * 获取连接状态
+     *
+     * @param botId 机器人 ID
+     * @return 连接状态
+     */
+    public String getConnectionStatus(String botId) {
+        return wsConnectionManager.getConnectionStatus(botId);
     }
 }

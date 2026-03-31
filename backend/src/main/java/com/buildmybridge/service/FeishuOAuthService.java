@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
@@ -35,7 +36,7 @@ public class FeishuOAuthService {
     private JwtTokenProvider jwtTokenProvider;
 
     @Autowired
-    private RedisTemplate<String, String> redisTemplate;
+    private RedisTemplate<String, Object> redisTemplate;
 
     @Value("${feishu.app-id}")
     private String appId;
@@ -52,20 +53,10 @@ public class FeishuOAuthService {
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
-    /**
-     * 生成飞书 OAuth 授权 URL
-     *
-     * @return 授权 URL
-     */
     public String generateAuthUrl() {
         String state = UUID.randomUUID().toString();
         // 缓存 state 到 Redis，10 分钟过期
-        redisTemplate.opsForValue().set(
-                "oauth_state:" + state,
-                "pending",
-                10,
-                TimeUnit.MINUTES
-        );
+        redisTemplate.opsForValue().set("oauth_state:" + state, "pending", 10, TimeUnit.MINUTES);
 
         return String.format(
                 "%s?client_id=%s&redirect_uri=%s&response_type=code&state=%s",
@@ -76,13 +67,6 @@ public class FeishuOAuthService {
         );
     }
 
-    /**
-     * 使用授权码交换 access_token
-     *
-     * @param code 授权码
-     * @param state OAuth state
-     * @return 飞书 access_token
-     */
     public String exchangeAccessToken(String code, String state) {
         // 验证 state
         Boolean stateValid = redisTemplate.hasKey("oauth_state:" + state);
@@ -94,7 +78,6 @@ public class FeishuOAuthService {
         redisTemplate.delete("oauth_state:" + state);
 
         try {
-            // 构建请求体
             Map<String, String> requestBody = new HashMap<>();
             requestBody.put("grant_type", "authorization_code");
             requestBody.put("client_id", appId);
@@ -102,14 +85,12 @@ public class FeishuOAuthService {
             requestBody.put("code", code);
             requestBody.put("redirect_uri", redirectUri);
 
-            // 发送请求
             String response = restTemplate.postForObject(
                     FEISHU_OAUTH_TOKEN_URL,
                     requestBody,
                     String.class
             );
 
-            // 解析响应
             Map<String, Object> responseMap = objectMapper.readValue(response, Map.class);
             if ((Integer) responseMap.get("code") != 0) {
                 throw new RuntimeException("Failed to exchange access token: " + responseMap.get("msg"));
@@ -123,7 +104,7 @@ public class FeishuOAuthService {
             redisTemplate.opsForValue().set(
                     "feishu_access_token",
                     accessToken,
-                    expiresIn - 300,  // 提前 5 分钟刷新
+                    expiresIn - 300,
                     TimeUnit.SECONDS
             );
 
@@ -134,25 +115,20 @@ public class FeishuOAuthService {
         }
     }
 
-    /**
-     * 获取登录用户信息
-     *
-     * @param accessToken 飞书 access_token
-     * @return 用户信息 (user_id, name)
-     */
     public Map<String, String> getUserInfo(String accessToken) {
         try {
-            Map<String, String> headers = new HashMap<>();
-            headers.put("Authorization", "Bearer " + accessToken);
+            org.springframework.http.HttpHeaders headers = new org.springframework.http.HttpHeaders();
+            headers.set("Authorization", "Bearer " + accessToken);
+            org.springframework.http.HttpEntity<String> entity = new org.springframework.http.HttpEntity<>(headers);
 
-            // 发送请求获取用户信息
-            String response = restTemplate.getForObject(
+            org.springframework.http.ResponseEntity<String> response = restTemplate.exchange(
                     FEISHU_USER_INFO_URL,
+                    org.springframework.http.HttpMethod.GET,
+                    entity,
                     String.class
             );
 
-            // 解析响应
-            Map<String, Object> responseMap = objectMapper.readValue(response, Map.class);
+            Map<String, Object> responseMap = objectMapper.readValue(response.getBody(), Map.class);
             if ((Integer) responseMap.get("code") != 0) {
                 throw new RuntimeException("Failed to get user info: " + responseMap.get("msg"));
             }
@@ -172,28 +148,16 @@ public class FeishuOAuthService {
         }
     }
 
-    /**
-     * OAuth 完整流程：获取 code 后的处理
-     *
-     * @param code 授权码
-     * @param state OAuth state
-     * @return LoginResponse 包含 JWT token
-     */
     public LoginResponse handleOAuthCallback(String code, String state) {
-        // 交换 access_token
         String accessToken = exchangeAccessToken(code, state);
-
-        // 获取用户信息
         Map<String, String> userInfo = getUserInfo(accessToken);
 
-        // 查询或创建用户
         User user = getUserOrCreate(
                 userInfo.get("user_id"),
                 userInfo.get("name"),
                 userInfo.get("open_id")
         );
 
-        // 生成 JWT token
         String jwtToken = jwtTokenProvider.generateToken(user.getId(), user.getUsername());
 
         return LoginResponse.builder()
@@ -203,31 +167,20 @@ public class FeishuOAuthService {
                 .build();
     }
 
-    /**
-     * 获取或创建用户
-     *
-     * @param feishuUserId 飞书 user_id
-     * @param name 用户名
-     * @param feishuOpenId 飞书 open_id
-     * @return 用户对象
-     */
     private User getUserOrCreate(String feishuUserId, String name, String feishuOpenId) {
-        // 根据 feishu_open_id 查询用户
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("feishu_open_id", feishuOpenId);
 
         User user = userMapper.selectOne(queryWrapper);
 
         if (user == null) {
-            // 创建新用户
             user = new User();
             user.setUsername(name);
             user.setFeishuOpenId(feishuOpenId);
-            user.setCreatedAt(new java.util.Date());
+            user.setCreatedAt(LocalDateTime.now());
             userMapper.insert(user);
             log.info("Created new user: {} with feishu_open_id: {}", name, feishuOpenId);
         } else {
-            // 更新用户名（如果有变化）
             if (!user.getUsername().equals(name)) {
                 user.setUsername(name);
                 userMapper.updateById(user);

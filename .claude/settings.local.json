@@ -8,7 +8,8 @@
       "Bash(curl -v http://localhost:8080/health)",
       "mcp__playwright__browser_navigate",
       "WebSearch",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(openspec list:*)"
     ]
   }
 }
