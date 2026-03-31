@@ -1,10 +1,11 @@
 package com.buildmybridge.controller;
 
-import com.buildmybridge.dto.ApiResponse;
+import com.buildmybridge.dto.RestResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -43,8 +44,8 @@ public class HealthController {
             )
         )
     })
-    public ApiResponse<?> health() {
-        return ApiResponse.success("BuildMyBridge Backend is running");
+    public RestResponse<?> health() {
+        return RestResponse.success("BuildMyBridge Backend is running");
     }
 }
 

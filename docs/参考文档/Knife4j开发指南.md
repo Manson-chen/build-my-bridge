@@ -1,57 +1,12 @@
-# Knife4j 配置完成指南
+# Knife4j 开发指南
 
-## ✅ 配置内容
+Knife4j 是基于 Swagger/OpenAPI 的增强型 API 文档工具，用于展示和测试后端 API。
 
-根据官方文档 (https://doc.xiaominfo.com/docs/quick-start) 完成了以下配置：
-
-### 1. Maven 依赖 (pom.xml)
-- 更新为 `knife4j-openapi3-jakarta-spring-boot-starter` v4.4.0
-- 适配 Spring Boot 3 + Jakarta EE
-
-### 2. YAML 配置 (application.yml)
-```yaml
-# SpringDoc OpenAPI 配置
-springdoc:
-  swagger-ui:
-    path: /swagger-ui.html
-    tags-sorter: alpha
-    operations-sorter: alpha
-  api-docs:
-    path: /v3/api-docs
-  group-configs:
-    - group: 'default'
-      paths-to-match: '/**'
-      packages-to-scan: com.buildmybridge
-
-# Knife4j 增强配置
-knife4j:
-  enable: true
-  setting:
-    language: zh_cn
-    enableSwaggerModels: true
-    swaggerModelsName: "数据模型"
-    enableDocumentManage: true
-    enableReload: true
-    enableFooter: true
-    footerCustom: "<div style='text-align: center;'>BuildMyBridge © 2026</div>"
-    enableSearch: true
-```
-
-### 3. Java 配置类 (Knife4jConfig.java)
-- 配置 OpenAPI Info（标题、版本、描述、联系方式）
-- 配置 Servers（开发环境、反向代理环境）
-- 配置 JWT 安全认证
-
-### 4. Controller 注解示例
-所有 Controller 已使用 OpenAPI 3 注解：
-- `@RestController` + `@Tag` - 标记 Controller
-- `@GetMapping/@PostMapping` + `@Operation` - 标记方法
-- `@ApiResponses` - 标记响应信息
-- `@Parameter` - 标记参数
+本项目使用 **Knife4j 4.4.0** + **Spring Boot 3** + **Jakarta EE**
 
 ---
 
-## 📝 使用 OpenAPI 3 注解指南
+## 📚 使用 OpenAPI 3 注解
 
 ### 基础 Controller 示例
 
@@ -113,7 +68,9 @@ public class User {
 }
 ```
 
-### 常见注解速查表
+---
+
+## 🎯 常见注解速查表
 
 | 注解 | 位置 | 用途 | 示例 |
 |-----|-----|------|------|
@@ -144,6 +101,8 @@ public class User {
 
 ### 隐藏某个 Controller 的文档
 ```java
+import io.swagger.v3.oas.annotations.Hidden;
+
 @RestController
 @Hidden  // 添加此注解
 public class InternalController {
@@ -162,10 +121,10 @@ public ApiResponse<String> oldMethod() {
 ```
 
 ### 添加全局认证要求
-在 Knife4jConfig.java 中已配置 JWT Bearer 认证，所有接口默认需要提供 Token。
+在 `Knife4jConfig.java` 中已配置 JWT Bearer 认证，所有接口默认需要提供 Token。
 
 ### 自定义接口分组
-修改 application.yml 中的 `springdoc.group-configs`:
+修改 `application.yml` 中的 `springdoc.group-configs`:
 ```yaml
 springdoc:
   group-configs:
@@ -177,14 +136,6 @@ springdoc:
       paths-to-match: '/api/bots/**'
       packages-to-scan: com.buildmybridge.controller.bot
 ```
-
----
-
-## 📚 更多信息
-
-- **官方文档**: https://doc.xiaominfo.com/
-- **SpringDoc OpenAPI**: https://springdoc.org/
-- **OpenAPI 3 规范**: https://spec.openapis.org/oas/v3.0.0
 
 ---
 
@@ -200,3 +151,51 @@ springdoc:
 - [ ] DTO 的字段有 `@Schema` 注解和 `example` 值
 
 这样可以在 Knife4j UI 中展示完整、专业的 API 文档。
+
+---
+
+## 📝 配置清单
+
+### application.yml 配置示例
+
+```yaml
+# SpringDoc OpenAPI 配置
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: com.buildmybridge
+
+# Knife4j 增强配置
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+    enableSwaggerModels: true
+    swaggerModelsName: "数据模型"
+    enableDocumentManage: true
+    enableReload: true
+    enableFooter: true
+    footerCustom: "<div style='text-align: center;'>BuildMyBridge © 2026</div>"
+    enableSearch: true
+```
+
+### pom.xml 依赖
+
+```xml
+<dependency>
+    <groupId>com.github.xiaoymin</groupId>
+    <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+    <version>4.4.0</version>
+</dependency>
+```
+
+---
+
+**最后更新**: 2026-03-31

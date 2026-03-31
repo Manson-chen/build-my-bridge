@@ -25,7 +25,7 @@ public class FeishuTokenService {
     private RestTemplate restTemplate;
 
     @Autowired
-    private RedisTemplate<String, String> redisTemplate;
+    private RedisTemplate<String, Object> redisTemplate;
 
     @Value("${feishu.app-id}")
     private String appId;
@@ -37,30 +37,16 @@ public class FeishuTokenService {
     private static final String TENANT_TOKEN_CACHE_KEY = "feishu:tenant_access_token";
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
-    /**
-     * 获取 tenant_access_token
-     * 首先从 Redis 缓存中取，如果不存在或过期则重新获取
-     *
-     * @return tenant_access_token
-     */
     public String getTenantAccessToken() {
-        // 尝试从 Redis 缓存中获取
-        String cachedToken = redisTemplate.opsForValue().get(TENANT_TOKEN_CACHE_KEY);
-        if (cachedToken != null && !cachedToken.isEmpty()) {
+        Object cachedToken = redisTemplate.opsForValue().get(TENANT_TOKEN_CACHE_KEY);
+        if (cachedToken != null && !cachedToken.toString().isEmpty()) {
             log.debug("Using cached tenant_access_token");
-            return cachedToken;
+            return cachedToken.toString();
         }
 
-        // 缓存不存在，重新获取
         return refreshTenantAccessToken();
     }
 
-    /**
-     * 刷新 tenant_access_token
-     * 从飞书 API 获取新的 token，并缓存到 Redis
-     *
-     * @return 新的 tenant_access_token
-     */
     public String refreshTenantAccessToken() {
         try {
             Map<String, String> requestBody = new HashMap<>();
@@ -90,14 +76,9 @@ public class FeishuTokenService {
                 throw new RuntimeException("Empty tenant_access_token in response");
             }
 
-            // 缓存到 Redis，设置 TTL（提前 5 分钟过期以便刷新）
+            // 缓存到 Redis（提前 5 分钟过期以便刷新）
             long ttl = expiresIn - 300;
-            redisTemplate.opsForValue().set(
-                    TENANT_TOKEN_CACHE_KEY,
-                    tenantAccessToken,
-                    ttl,
-                    TimeUnit.SECONDS
-            );
+            redisTemplate.opsForValue().set(TENANT_TOKEN_CACHE_KEY, tenantAccessToken, ttl, TimeUnit.SECONDS);
 
             log.info("Successfully refreshed tenant_access_token, expires in {} seconds", expiresIn);
             return tenantAccessToken;
@@ -107,14 +88,8 @@ public class FeishuTokenService {
         }
     }
 
-    /**
-     * 检查 token 是否即将过期
-     * 用于主动刷新 token
-     *
-     * @return 是否需要刷新
-     */
     public boolean shouldRefreshToken() {
         Long ttl = redisTemplate.getExpire(TENANT_TOKEN_CACHE_KEY, TimeUnit.SECONDS);
-        return ttl == null || ttl < 600; // 少于 10 分钟则需要刷新
+        return ttl == null || ttl < 600;
     }
 }

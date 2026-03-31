@@ -1,6 +1,6 @@
 package com.buildmybridge.exception;
 
-import com.buildmybridge.dto.ApiResponse;
+import com.buildmybridge.dto.RestResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,7 +28,7 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ApiResponse<?> handleValidationException(MethodArgumentNotValidException ex,
+    public RestResponse<?> handleValidationException(MethodArgumentNotValidException ex,
                                                      WebRequest request) {
         Map<String, String> errors = new HashMap<>();
         ex.getBindingResult().getAllErrors().forEach((error) -> {
@@ -37,7 +37,7 @@ public class GlobalExceptionHandler {
             errors.put(fieldName, errorMessage);
         });
         log.warn("参数验证错误: {}", errors);
-        return ApiResponse.error("VALIDATION_ERROR", "参数验证失败: " + errors);
+        return RestResponse.error("VALIDATION_ERROR", "参数验证失败: " + errors);
     }
 
     /**
@@ -45,10 +45,10 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(BusinessException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ApiResponse<?> handleBusinessException(BusinessException ex,
+    public RestResponse<?> handleBusinessException(BusinessException ex,
                                                    WebRequest request) {
         log.warn("业务异常: code={}, message={}", ex.getCode(), ex.getMessage());
-        return ApiResponse.error(ex.getCode(), ex.getMessage());
+        return RestResponse.error(ex.getCode(), ex.getMessage());
     }
 
     /**
@@ -56,10 +56,10 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public ApiResponse<?> handleGlobalException(Exception ex,
+    public RestResponse<?> handleGlobalException(Exception ex,
                                                 WebRequest request) {
         log.error("系统异常", ex);
-        return ApiResponse.error("SYSTEM_ERROR", "系统错误，请稍后重试");
+        return RestResponse.error("SYSTEM_ERROR", "系统错误，请稍后重试");
     }
 
     /**
@@ -67,9 +67,9 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(RuntimeException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public ApiResponse<?> handleRuntimeException(RuntimeException ex,
+    public RestResponse<?> handleRuntimeException(RuntimeException ex,
                                                  WebRequest request) {
         log.error("运行时异常", ex);
-        return ApiResponse.error("RUNTIME_ERROR", ex.getMessage());
+        return RestResponse.error("RUNTIME_ERROR", ex.getMessage());
     }
 }

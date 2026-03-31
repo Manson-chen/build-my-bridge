@@ -1,13 +1,13 @@
-# 飞书机器人集成 - 实现总结
+# Feishu 集成实现总结
 
 **实现日期**: 2026-03-31  
-**完成部分**: 飞书 OAuth 认证 + 机器人管理 + 消息基础设施
+**完成部分**: Feishu OAuth 认证 + 机器人管理 + 消息基础设施
 
 ---
 
 ## ✅ 已完成的模块
 
-### 1. **OAuth 认证模块** (Section 3.4-3.5)
+### 1. **OAuth 认证模块** 
 - ✅ `FeishuOAuthService` - 完整 OAuth 流程
   - 生成授权 URL
   - 交换 access_token
@@ -20,14 +20,14 @@
   - `GET /auth/callback` - OAuth 回调处理，返回 JWT
   - `POST /auth/logout` - 登出
 
-### 2. **飞书 Token 管理** (Section 4.1)
+### 2. **飞书 Token 管理** 
 - ✅ `FeishuTokenService` - tenant_access_token 生命周期管理
   - 自动获取 token
   - Redis 缓存（有效期 2 小时 - 5 分钟）
   - 自动刷新机制
   - 过期检测
 
-### 3. **消息处理基础设施** (Section 4.2-4.3)
+### 3. **消息处理基础设施** 
 - ✅ `FeishuMessageParser` - 事件解析
   - 解析飞书事件 JSON
   - 提取消息内容、发送者、会话信息
@@ -40,7 +40,7 @@
   - 回复消息（子消息）
   - 自动使用最新 token
 
-### 4. **机器人管理** (Section 4.6-4.7)
+### 4. **机器人管理** 
 - ✅ `BotAccountService` - CRUD 操作
   - 创建/更新/删除机器人
   - 获取机器人列表
@@ -62,62 +62,31 @@
 
 ---
 
-## 📐 架构概览
+## 📐 消息流架构
 
 ```
-用户浏览器
+用户在飞书
     ↓
-    ├─→ GET /auth/login
-    │   ↓
-    │   (生成飞书授权 URL)
-    │   ↓
-    │   飞书扫码登录
-    │   ↓
-    ├─→ GET /auth/callback?code=xxx&state=xxx
-        ↓
-        FeishuOAuthService
-        ├─→ 交换 access_token
-        ├─→ 获取用户信息
-        ├─→ 创建/更新用户
-        └─→ 生成 JWT token
-        ↓
-    ← 返回 JWT (保存到前端)
-
-后续请求
-    ↓
-    Authorization: Bearer JWT
-    ↓
-    SecurityConfig
-    ├─→ JwtAuthenticationFilter
-    │   ├─→ 验证 JWT
-    │   └─→ 设置 SecurityContext
-    ↓
-    业务 API (受保护)
-
-机器人管理
-    ↓
-    POST /bots (创建机器人)
-    ├─→ BotAccountService
-    │   ├─→ 保存到数据库
-    │   └─→ AppSecret 加密存储
-    ├─→ (后续) FeishuWSConnectionManager
-    │   └─→ 创建 WebSocket 长连接
-    ↓
-    飞书服务器 (接收事件)
-
-消息流程
-    ↓
-    飞书 → WebSocket 事件
-    ↓
-    FeishuEventHandler (待实现)
-    ├─→ 快速验证签名 (3秒内)
-    └─→ 异步入队 Redis
-    ↓
-    MessageHandlerService (待实现)
-    ├─→ FeishuMessageParser (解析)
-    ├─→ DifyClient (调用 AI)
-    ├─→ FeishuMessageSender (回复)
-    └─→ MessageLogService (记录)
+    ├─→ 扫码登录
+    │   ├─→ GET /auth/login
+    │   ├─→ 返回飞书授权 URL
+    │   ├─→ 用户在飞书扫码
+    │   ├─→ 飞书回调 /auth/callback
+    │   └─→ 生成 JWT token，保存到前端
+    │
+    ├─→ 管理机器人
+    │   ├─→ POST /bots (创建)
+    │   ├─→ GET /bots (列表)
+    │   ├─→ PUT /bots/{id} (更新)
+    │   └─→ DELETE /bots/{id} (删除)
+    │
+    └─→ 后续消息流程 (待实现)
+        ├─→ 用户发送消息
+        ├─→ 飞书 WebSocket 事件
+        ├─→ FeishuEventHandler (待实现)
+        ├─→ MessageHandlerService (待实现)
+        ├─→ DifyClient (待实现)
+        └─→ 回复消息
 ```
 
 ---
@@ -220,6 +189,7 @@ GET http://localhost:8081/api/auth/login
 # 2. 测试机器人创建
 POST http://localhost:8081/api/bots
 Content-Type: application/json
+Authorization: Bearer YOUR_JWT_TOKEN
 {
   "botName": "我的机器人",
   "appId": "cli_xxx",
@@ -228,6 +198,7 @@ Content-Type: application/json
 
 # 3. 获取机器人列表
 GET http://localhost:8081/api/bots
+Authorization: Bearer YOUR_JWT_TOKEN
 
 # 4. 访问 Knife4j 文档
 GET http://localhost:8081/api/doc.html
@@ -247,13 +218,10 @@ GET http://localhost:8081/api/doc.html
     redirect-uri: http://localhost:8080/api/auth/callback
   ```
 
-- [ ] MySQL 数据库已启动，user 表已创建
-
+- [ ] MySQL 数据库已启动，必要的表已创建
 - [ ] Redis 已启动
-
 - [ ] Knife4j 文档可访问：http://localhost:8081/api/doc.html
-
-- [ ] 所有 OpenAPI 注解已添加（自动生成 Swagger 文档）
+- [ ] 所有 OpenAPI 注解已添加
 
 ---
 
@@ -274,9 +242,4 @@ GET http://localhost:8081/api/doc.html
 
 ---
 
-## 📚 相关文档
-
-- 飞书 SDK 文档: https://open.larkenterprise.com/document/server-docs/server-side-sdk
-- Knife4j 配置: ../KNIFE4J_CONFIG.md
-- 技术栈说明: ../TECH_STACK.md
-- OpenSpec 任务: ../openspec/changes/build-my-bridge/tasks.md
+**最后更新**: 2026-03-31

@@ -1,0 +1,159 @@
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-03-31 20:05:04 [main] INFO  c.b.BuildMyBridgeApplication - Starting BuildMyBridgeApplication v0.1.0 using Java 21.0.1 with PID 103272 (D:\ai\build-my-bridge\backend\target\buildmybridge-backend-0.1.0.jar started by chenjiandong in D:\ai\build-my-bridge\backend)
+2026-03-31 20:05:04 [main] DEBUG c.b.BuildMyBridgeApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 20:05:04 [main] INFO  c.b.BuildMyBridgeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 20:05:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 20:05:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 20:05:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
+2026-03-31 20:05:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-03-31 20:05:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 20:05:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 20:05:09 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-03-31 20:05:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4880 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-03-31 20:05:10 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.5 
+2026-03-31 20:05:13 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-03-31 20:05:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@cfb94fd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ebd8d2, org.springframework.security.web.context.SecurityContextHolderFilter@5a8b42a3, org.springframework.security.web.header.HeaderWriterFilter@4df13dd0, org.springframework.web.filter.CorsFilter@44a44a04, org.springframework.security.web.authentication.logout.LogoutFilter@5d93ff21, com.buildmybridge.security.JwtAuthenticationFilter@382d71c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44106e25, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57a5b03, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a63fa71, org.springframework.security.web.session.SessionManagementFilter@2792c28, org.springframework.security.web.access.ExceptionTranslationFilter@3265995e, org.springframework.security.web.access.intercept.AuthorizationFilter@13f36d75]
+2026-03-31 20:05:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/api'
+2026-03-31 20:05:17 [main] INFO  c.b.BuildMyBridgeApplication - Started BuildMyBridgeApplication in 13.89 seconds (process running for 15.394)
+2026-03-31 20:05:48 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 20:05:48 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 20:05:48 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-31 20:05:48 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /health/
+2026-03-31 20:05:48 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:05:48 [http-nio-8081-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/health/' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-31 20:05:48 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 20:05:48 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 20:05:48 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:05:48 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 20:07:17 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /doc.html
+2026-03-31 20:07:17 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /doc.html
+2026-03-31 20:07:17 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/app.8a48e86b.css
+2026-03-31 20:07:17 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/app.8a48e86b.css
+2026-03-31 20:07:17 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-vendors.f24a310a.css
+2026-03-31 20:07:17 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-vendors.d51cf6f8.js
+2026-03-31 20:07:17 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-d7d5f59c.a9ffbfcb.css
+2026-03-31 20:07:17 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/app.b0c0d7df.js
+2026-03-31 20:07:17 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-75464e7e.8fb93ba5.css
+2026-03-31 20:07:17 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-vendors.d51cf6f8.js
+2026-03-31 20:07:17 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/app.b0c0d7df.js
+2026-03-31 20:07:17 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-vendors.f24a310a.css
+2026-03-31 20:07:17 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-75464e7e.8fb93ba5.css
+2026-03-31 20:07:17 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-d7d5f59c.a9ffbfcb.css
+2026-03-31 20:07:17 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-069eb437.355c4fb0.js
+2026-03-31 20:07:17 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-0d102d5a.b2bddffc.js
+2026-03-31 20:07:17 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-0fd67716.d57e2c41.js
+2026-03-31 20:07:17 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-0d102d5a.b2bddffc.js
+2026-03-31 20:07:17 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-069eb437.355c4fb0.js
+2026-03-31 20:07:17 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-260d712a.390177fe.js
+2026-03-31 20:07:17 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-0fd67716.d57e2c41.js
+2026-03-31 20:07:17 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-2d0af44e.392afcd6.js
+2026-03-31 20:07:17 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-2d0bd799.eb48b7f1.js
+2026-03-31 20:07:17 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-260d712a.390177fe.js
+2026-03-31 20:07:17 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-2d0da532.591ad7fc.js
+2026-03-31 20:07:17 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-2d0af44e.392afcd6.js
+2026-03-31 20:07:17 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-2d0bd799.eb48b7f1.js
+2026-03-31 20:07:17 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-2d0da532.591ad7fc.js
+2026-03-31 20:07:17 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-3b888a65.8737ce4f.js
+2026-03-31 20:07:17 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-589faee0.5bfd1708.js
+2026-03-31 20:07:17 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-3ec4aaa8.a79d19f8.js
+2026-03-31 20:07:17 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-735c675c.5b409314.js
+2026-03-31 20:07:17 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-3ec4aaa8.a79d19f8.js
+2026-03-31 20:07:17 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-3b888a65.8737ce4f.js
+2026-03-31 20:07:17 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-589faee0.5bfd1708.js
+2026-03-31 20:07:17 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-75464e7e.b130271b.js
+2026-03-31 20:07:17 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-735c675c.5b409314.js
+2026-03-31 20:07:17 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-adb9e944.2c7f24fe.js
+2026-03-31 20:07:17 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-75464e7e.b130271b.js
+2026-03-31 20:07:17 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-d7d5f59c.e61130f3.js
+2026-03-31 20:07:17 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-adb9e944.2c7f24fe.js
+2026-03-31 20:07:17 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-d7d5f59c.e61130f3.js
+2026-03-31 20:07:17 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2026-03-31 20:07:17 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2026-03-31 20:07:17 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 20:07:17 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 20:07:17 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2026-03-31 20:07:17 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:17 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 20:07:18 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/default
+2026-03-31 20:07:18 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:18 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/default
+2026-03-31 20:07:19 [http-nio-8081-exec-5] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1279 ms
+2026-03-31 20:07:35 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-d7d5f59c.a9ffbfcb.css
+2026-03-31 20:07:35 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-d7d5f59c.e61130f3.js
+2026-03-31 20:07:35 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-069eb437.355c4fb0.js
+2026-03-31 20:07:35 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-75464e7e.b130271b.js
+2026-03-31 20:07:35 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-adb9e944.2c7f24fe.js
+2026-03-31 20:07:35 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:35 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/css/chunk-75464e7e.8fb93ba5.css
+2026-03-31 20:07:35 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:35 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:35 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:35 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:35 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:35 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-d7d5f59c.a9ffbfcb.css
+2026-03-31 20:07:35 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-adb9e944.2c7f24fe.js
+2026-03-31 20:07:35 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-069eb437.355c4fb0.js
+2026-03-31 20:07:35 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-d7d5f59c.e61130f3.js
+2026-03-31 20:07:35 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/css/chunk-75464e7e.8fb93ba5.css
+2026-03-31 20:07:35 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-75464e7e.b130271b.js
+2026-03-31 20:07:35 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2026-03-31 20:07:35 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:35 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 20:07:35 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2026-03-31 20:07:35 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-2d0af44e.392afcd6.js
+2026-03-31 20:07:35 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-3ec4aaa8.a79d19f8.js
+2026-03-31 20:07:35 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-3b888a65.8737ce4f.js
+2026-03-31 20:07:35 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:35 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:35 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:35 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-2d0af44e.392afcd6.js
+2026-03-31 20:07:35 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-3ec4aaa8.a79d19f8.js
+2026-03-31 20:07:35 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-3b888a65.8737ce4f.js
+2026-03-31 20:07:35 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:35 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-03-31 20:07:37 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-0d102d5a.b2bddffc.js
+2026-03-31 20:07:37 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-0fd67716.d57e2c41.js
+2026-03-31 20:07:37 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /webjars/js/chunk-589faee0.5bfd1708.js
+2026-03-31 20:07:37 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:37 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:37 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-03-31 20:07:37 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-0d102d5a.b2bddffc.js
+2026-03-31 20:07:37 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-589faee0.5bfd1708.js
+2026-03-31 20:07:37 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /webjars/js/chunk-0fd67716.d57e2c41.js

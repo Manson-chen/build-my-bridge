@@ -73,15 +73,15 @@
   - [x] 3.3.2 配置公开路径：/login、/callback、/health 等
   - [x] 3.3.3 注册 JwtAuthenticationFilter
   - [x] 3.3.4 配置 CORS 和防 CSRF
-- [ ] 3.4 实现 FeishuOAuthService，处理 OAuth 流程（使用 lark-java SDK）
-  - [ ] 3.4.1 生成飞书 OAuth 授权 URL
-  - [ ] 3.4.2 使用授权码交换 access_token
-  - [ ] 3.4.3 获取登录用户信息（user_id、name 等）
-  - [ ] 3.4.4 缓存 access_token 到 Redis（带过期时间）
-- [ ] 3.5 实现 AuthController，提供 REST API
-  - [ ] 3.5.1 POST /login - 生成 OAuth 授权 URL
-  - [ ] 3.5.2 GET /callback - OAuth 回调处理，返回 JWT Token
-  - [ ] 3.5.3 POST /logout - 登出（可选，清理 Token）
+- [x] 3.4 实现 FeishuOAuthService，处理 OAuth 流程（使用 lark-java SDK）
+  - [x] 3.4.1 生成飞书 OAuth 授权 URL
+  - [x] 3.4.2 使用授权码交换 access_token
+  - [x] 3.4.3 获取登录用户信息（user_id、name 等）
+  - [x] 3.4.4 缓存 access_token 到 Redis（带过期时间）
+- [x] 3.5 实现 AuthController，提供 REST API
+  - [x] 3.5.1 POST /login - 生成 OAuth 授权 URL
+  - [x] 3.5.2 GET /callback - OAuth 回调处理，返回 JWT Token
+  - [x] 3.5.3 POST /logout - 登出（可选，清理 Token）
 - [ ] 3.6 编写认证模块的单元测试
   - [ ] 3.6.1 测试 JWT Token 生成和验证
   - [ ] 3.6.2 测试 OAuth 流程
@@ -89,44 +89,44 @@
 
 ## 4. 后端飞书长连接集成模块（Phase 1）
 
-- [ ] 4.1 实现 FeishuTokenService，管理 tenant_access_token 并缓存到 Redis（使用 lark-java SDK）
-  - [ ] 4.1.1 初始化 Lark Client
-  - [ ] 4.1.2 获取 tenant_access_token（App 访问令牌）
-  - [ ] 4.1.3 缓存到 Redis，设置 TTL（2 小时）
-  - [ ] 4.1.4 Token 过期时自动刷新
-- [ ] 4.2 实现 FeishuMessageParser，解析飞书 WebSocket 事件
-  - [ ] 4.2.1 解析消息事件（Message_Received 等）
-  - [ ] 4.2.2 提取消息内容、发送者、会话信息
-  - [ ] 4.2.3 支持文本、图片、语音等消息类型
-- [ ] 4.3 实现 FeishuMessageSender，通过飞书 IM API 发送回复
-  - [ ] 4.3.1 使用 lark-java SDK 发送文本消息
-  - [ ] 4.3.2 处理发送失败和重试
-- [ ] 4.4 实现 FeishuWSConnectionManager，管理多个 WebSocket 连接（使用 lark-java 中的 WSClient）
-  - [ ] 4.4.1 createConnection(botId, appId, appSecret) - 异步创建 WSClient
-  - [ ] 4.4.2 重试策略：初始立即尝试（0ms），2秒、5秒各重试一次（共3次）
-  - [ ] 4.4.3 使用 @Async 和 CompletableFuture 实现异步创建
-  - [ ] 4.4.4 连接失败3次后标记 Bot 状态为 FAILED，记录错误日志
-  - [ ] 4.4.5 closeConnection(botId) - 正常关闭连接
-  - [ ] 4.4.6 getConnection(botId) - 获取已连接的 Client
-  - [ ] 4.4.7 connectionMap 存储所有活跃连接（Map<String, WSClient>）
+- [x] 4.1 实现 FeishuTokenService，管理 tenant_access_token 并缓存到 Redis（使用 lark-java SDK）
+  - [x] 4.1.1 初始化 Lark Client
+  - [x] 4.1.2 获取 tenant_access_token（App 访问令牌）
+  - [x] 4.1.3 缓存到 Redis，设置 TTL（2 小时）
+  - [x] 4.1.4 Token 过期时自动刷新
+- [x] 4.2 实现 FeishuMessageParser，解析飞书 WebSocket 事件
+  - [x] 4.2.1 解析消息事件（Message_Received 等）
+  - [x] 4.2.2 提取消息内容、发送者、会话信息
+  - [x] 4.2.3 支持文本、图片、语音等消息类型
+- [x] 4.3 实现 FeishuMessageSender，通过飞书 IM API 发送回复
+  - [x] 4.3.1 使用 lark-java SDK 发送文本消息
+  - [x] 4.3.2 处理发送失败和重试
+- [x] 4.4 实现 FeishuWSConnectionManager，管理多个 WebSocket 连接（使用 lark-java 中的 WSClient）
+  - [x] 4.4.1 createConnection(botId, appId, appSecret) - 异步创建 WSClient
+  - [x] 4.4.2 重试策略：初始立即尝试（0ms），2秒、5秒各重试一次（共3次）
+  - [x] 4.4.3 使用 @Async 和 CompletableFuture 实现异步创建
+  - [x] 4.4.4 连接失败3次后标记 Bot 状态为 FAILED，记录错误日志
+  - [x] 4.4.5 closeConnection(botId) - 正常关闭连接
+  - [x] 4.4.6 getConnection(botId) - 获取已连接的 Client
+  - [x] 4.4.7 connectionMap 存储所有活跃连接（Map<String, WSClient>）
 - [ ] 4.5 实现 FeishuEventHandler，处理飞书事件回调
   - [ ] 4.5.1 快速验证消息签名并返回 200（在 3 秒内完成）
   - [ ] 4.5.2 事件消息异步入队到 Redis 消息队列处理
-- [ ] 4.6 实现 BotAccountService，提供机器人账户的 CRUD 操作（@Service）
-  - [ ] 4.6.1 使用 BotAccountMapper（MyBatis-Plus）进行数据库操作
-  - [ ] 4.6.2 支持 bot_type 和 bot_config（JSON 存储在数据库）
-  - [ ] 4.6.3 AppSecret 使用 MD5 加密存储（工具类 MD5Util）
-  - [ ] 4.6.4 创建 Bot 时自动调用 FeishuWSConnectionManager.createConnection()
-  - [ ] 4.6.5 删除 Bot 时自动调用 FeishuWSConnectionManager.closeConnection()
-  - [ ] 4.6.6 getBotsWithStatus() 返回 Bot 列表及其当前连接状态（INIT、CONNECTING、CONNECTED、FAILED）
-- [ ] 4.7 实现 BotAccountController，提供 REST API 接口（@RestController）
-  - [ ] 4.7.1 GET /bots - 获取 Bot 列表（包括连接状态）
-  - [ ] 4.7.2 GET /bots/{id} - 获取单个 Bot 详情
-  - [ ] 4.7.3 POST /bots - 创建新 Bot
-  - [ ] 4.7.4 PUT /bots/{id} - 编辑 Bot
-  - [ ] 4.7.5 DELETE /bots/{id} - 删除 Bot
-  - [ ] 4.7.6 GET /bots/available-apps - 获取所有启用的 AiApp 列表
-  - [ ] 4.7.7 GET /bots/{id}/status - 查询单个 Bot 的连接状态（支持前端轮询）
+- [x] 4.6 实现 BotAccountService，提供机器人账户的 CRUD 操作（@Service）
+  - [x] 4.6.1 使用 BotAccountMapper（MyBatis-Plus）进行数据库操作
+  - [x] 4.6.2 支持 bot_type 和 bot_config（JSON 存储在数据库）
+  - [x] 4.6.3 AppSecret 使用 MD5 加密存储（工具类 MD5Util）
+  - [x] 4.6.4 创建 Bot 时自动调用 FeishuWSConnectionManager.createConnection()
+  - [x] 4.6.5 删除 Bot 时自动调用 FeishuWSConnectionManager.closeConnection()
+  - [x] 4.6.6 getBotsWithStatus() 返回 Bot 列表及其当前连接状态（INIT、CONNECTING、CONNECTED、FAILED）
+- [x] 4.7 实现 BotAccountController，提供 REST API 接口（@RestController）
+  - [x] 4.7.1 GET /bots - 获取 Bot 列表（包括连接状态）
+  - [x] 4.7.2 GET /bots/{id} - 获取单个 Bot 详情
+  - [x] 4.7.3 POST /bots - 创建新 Bot
+  - [x] 4.7.4 PUT /bots/{id} - 编辑 Bot
+  - [x] 4.7.5 DELETE /bots/{id} - 删除 Bot
+  - [x] 4.7.6 GET /bots/available-apps - 获取所有启用的 AiApp 列表
+  - [x] 4.7.7 GET /bots/{id}/status - 查询单个 Bot 的连接状态（支持前端轮询）
 - [ ] 4.8 编写飞书集成的单元测试
   - [ ] 4.8.1 测试连接创建和重试逻辑
   - [ ] 4.8.2 测试消息解析
@@ -134,10 +134,10 @@
 
 ## 5. 后端 AI 应用集成模块
 
-- [ ] 5.1 实现 AiAppService，提供应用账户的 CRUD 操作
-  - [ ] 5.1.1 使用 AiAppMapper（MyBatis-Plus）进行数据库操作
-  - [ ] 5.1.2 支持 app_type（DIFY、OPENAI 等）和 app_config（JSON 存储）
-  - [ ] 5.1.3 支持应用启用/禁用
+- [x] 5.1 实现 AiAppService，提供应用账户的 CRUD 操作
+  - [x] 5.1.1 使用 AiAppMapper（MyBatis-Plus）进行数据库操作
+  - [x] 5.1.2 支持 app_type（DIFY、OPENAI 等）和 app_config（JSON 存储）
+  - [x] 5.1.3 支持应用启用/禁用
 - [ ] 5.2 实现 DifyAppAdapter，将 Dify 特定操作适配到通用 AiApp 接口
   - [ ] 5.2.1 Adapter 模式实现，支持多平台扩展
   - [ ] 5.2.2 从 app_config 中解析 Dify API URL、API Key、App ID
@@ -149,39 +149,39 @@
   - [ ] 5.4.1 调用 Dify Workflow 接口
   - [ ] 5.4.2 支持流式和非流式模式
   - [ ] 5.4.3 错误处理和超时管理
-- [ ] 5.5 实现 AiAppController，提供 REST API 接口
-  - [ ] 5.5.1 GET /apps - 获取应用列表（支持分页、筛选）
-  - [ ] 5.5.2 GET /apps/{id} - 获取应用详情
-  - [ ] 5.5.3 POST /apps - 创建应用
-  - [ ] 5.5.4 PUT /apps/{id} - 编辑应用
-  - [ ] 5.5.5 DELETE /apps/{id} - 删除应用
-  - [ ] 5.5.6 PUT /apps/{id}/disable - 禁用应用（返回受影响的 Bot 列表）
-  - [ ] 5.5.7 GET /apps/{id}/affected-bots - 查询受影响的机器人列表
+- [x] 5.5 实现 AiAppController，提供 REST API 接口
+  - [x] 5.5.1 GET /apps - 获取应用列表（支持分页、筛选）
+  - [x] 5.5.2 GET /apps/{id} - 获取应用详情
+  - [x] 5.5.3 POST /apps - 创建应用
+  - [x] 5.5.4 PUT /apps/{id} - 编辑应用
+  - [x] 5.5.5 DELETE /apps/{id} - 删除应用
+  - [x] 5.5.6 PUT /apps/{id}/disable - 禁用应用（返回受影响的 Bot 列表）
+  - [x] 5.5.7 GET /apps/{id}/affected-bots - 查询受影响的机器人列表
 - [ ] 5.6 编写 AI 应用客户端的单元测试
 
 ## 6. 后端绑定关系管理模块（Phase 1）
 
-- [ ] 6.1 实现 SubscriptionService，提供绑定关系的 CRUD 操作
-  - [ ] 6.1.1 支持创建和更新 subscription（包括 session_timeout_minutes 和 show_error_to_user 配置）
-  - [ ] 6.1.2 提供查询接口获取绑定关系及其配置
-  - [ ] 6.1.3 支持按机器人查询应用，按应用查询受影响的机器人
-- [ ] 6.2 实现 SubscriptionController，提供 REST API
-  - [ ] 6.2.1 POST /subscriptions - 创建绑定关系（包括 session_timeout_minutes 和 show_error_to_user）
-  - [ ] 6.2.2 PUT /subscriptions/{id} - 更新绑定关系配置
-  - [ ] 6.2.3 GET /subscriptions/{bot_id} - 查询机器人的绑定关系
-  - [ ] 6.2.4 GET /subscriptions/app/{app_id}/affected-bots - 查询禁用应用时的受影响机器人列表
+- [x] 6.1 实现 SubscriptionService，提供绑定关系的 CRUD 操作
+  - [x] 6.1.1 支持创建和更新 subscription（包括 session_timeout_minutes 和 show_error_to_user 配置）
+  - [x] 6.1.2 提供查询接口获取绑定关系及其配置
+  - [x] 6.1.3 支持按机器人查询应用，按应用查询受影响的机器人
+- [x] 6.2 实现 SubscriptionController，提供 REST API
+  - [x] 6.2.1 POST /subscriptions - 创建绑定关系（包括 session_timeout_minutes 和 show_error_to_user）
+  - [x] 6.2.2 PUT /subscriptions/{id} - 更新绑定关系配置
+  - [x] 6.2.3 GET /subscriptions/{bot_id} - 查询机器人的绑定关系
+  - [x] 6.2.4 GET /subscriptions/app/{app_id}/affected-bots - 查询禁用应用时的受影响机器人列表
 
 ## 7. 后端消息路由和处理模块（Phase 1）
 
-- [ ] 7.1 实现 SessionStateService，管理会话状态（Redis 存储）
-  - [ ] 7.1.1 会话 Key 格式：session:{user_id}:{bot_account_id}
-  - [ ] 7.1.2 会话 TTL 由 subscription.session_timeout_minutes 决定（默认 120 分钟）
-  - [ ] 7.1.3 会话数据结构：conversation_id、context、metadata、timestamps（JSON 序列化存储）
-  - [ ] 7.1.4 支持会话创建、查询、更新、延期、过期操作（使用 RedisTemplate）
-- [ ] 7.2 实现 MessageRouterService，根据 subscription 关系路由消息
-  - [ ] 7.2.1 根据 bot_account_id 查询 Subscription
-  - [ ] 7.2.2 验证应用状态（enabled）
-  - [ ] 7.2.3 返回路由目标（ai_app_id、配置等）
+- [x] 7.1 实现 SessionStateService，管理会话状态（Redis 存储）
+  - [x] 7.1.1 会话 Key 格式：session:{user_id}:{bot_account_id}
+  - [x] 7.1.2 会话 TTL 由 subscription.session_timeout_minutes 决定（默认 120 分钟）
+  - [x] 7.1.3 会话数据结构：conversation_id、context、metadata、timestamps（JSON 序列化存储）
+  - [x] 7.1.4 支持会话创建、查询、更新、延期、过期操作（使用 RedisTemplate）
+- [x] 7.2 实现 MessageRouterService，根据 subscription 关系路由消息
+  - [x] 7.2.1 根据 bot_account_id 查询 Subscription
+  - [x] 7.2.2 验证应用状态（enabled）
+  - [x] 7.2.3 返回路由目标（ai_app_id、配置等）
 - [ ] 7.3 实现消息校验和错误处理
   - [ ] 7.3.1 检查无绑定关系的情况
   - [ ] 7.3.2 检查禁用应用的情况
@@ -210,16 +210,16 @@
 
 ## 8. 后端消息日志 API 模块（Phase 1）
 
-- [ ] 8.1 实现 MessageLogService，提供查询和统计方法
-  - [ ] 8.1.1 使用 MessageLogMapper（MyBatis-Plus）进行查询
-  - [ ] 8.1.2 支持分页、筛选（bot_id、app_id、status、date range）
-  - [ ] 8.1.3 支持搜索（消息内容关键词）
-  - [ ] 8.1.4 统计方法：总消息数、成功率、失败率等
-- [ ] 8.2 实现 MessageLogController，提供 REST API
-  - [ ] 8.2.1 GET /logs - 获取消息日志（分页、筛选）
-  - [ ] 8.2.2 GET /logs/{id} - 获取日志详情
-  - [ ] 8.2.3 GET /logs/stats - 统计信息（总数、成功率等）
-  - [ ] 8.2.4 GET /logs/export - 导出日志（可选，返回 CSV）
+- [x] 8.1 实现 MessageLogService，提供查询和统计方法
+  - [x] 8.1.1 使用 MessageLogMapper（MyBatis-Plus）进行查询
+  - [x] 8.1.2 支持分页、筛选（bot_id、app_id、status、date range）
+  - [x] 8.1.3 支持搜索（消息内容关键词）
+  - [x] 8.1.4 统计方法：总消息数、成功率、失败率等
+- [x] 8.2 实现 MessageLogController，提供 REST API
+  - [x] 8.2.1 GET /logs - 获取消息日志（分页、筛选）
+  - [x] 8.2.2 GET /logs/{id} - 获取日志详情
+  - [x] 8.2.3 GET /logs/stats - 统计信息（总数、成功率等）
+  - [x] 8.2.4 GET /logs/export - 导出日志（可选，返回 CSV）
 - [ ] 8.3 实现日志清理任务（@Scheduled 定时任务）
   - [ ] 8.3.1 定时删除 30 天前的旧日志
   - [ ] 8.3.2 当日志记录超过 10 万条时触发清理

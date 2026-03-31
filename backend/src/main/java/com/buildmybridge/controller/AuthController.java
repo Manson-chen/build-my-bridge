@@ -1,6 +1,6 @@
 package com.buildmybridge.controller;
 
-import com.buildmybridge.dto.ApiResponse;
+import com.buildmybridge.dto.RestResponse;
 import com.buildmybridge.dto.LoginResponse;
 import com.buildmybridge.dto.OAuthUrlResponse;
 import com.buildmybridge.service.FeishuOAuthService;
@@ -46,15 +46,15 @@ public class AuthController {
             )
         )
     })
-    public ApiResponse<OAuthUrlResponse> login() {
+    public RestResponse<OAuthUrlResponse> login() {
         try {
             String authUrl = feishuOAuthService.generateAuthUrl();
-            return ApiResponse.success(OAuthUrlResponse.builder()
+            return RestResponse.success(OAuthUrlResponse.builder()
                     .url(authUrl)
                     .build());
         } catch (Exception e) {
             log.error("Failed to generate auth URL", e);
-            return ApiResponse.error("AUTH_ERROR", "生成授权链接失败");
+            return RestResponse.error("AUTH_ERROR", "生成授权链接失败");
         }
     }
 
@@ -80,16 +80,16 @@ public class AuthController {
             description = "授权失败或 code 无效"
         )
     })
-    public ApiResponse<LoginResponse> callback(
+    public RestResponse<LoginResponse> callback(
             @Parameter(name = "code", description = "授权码") @RequestParam String code,
             @Parameter(name = "state", description = "OAuth state 参数") @RequestParam String state) {
         try {
             LoginResponse loginResponse = feishuOAuthService.handleOAuthCallback(code, state);
             log.info("User {} logged in successfully", loginResponse.getUsername());
-            return ApiResponse.success(loginResponse);
+            return RestResponse.success(loginResponse);
         } catch (Exception e) {
             log.error("OAuth callback failed", e);
-            return ApiResponse.error("AUTH_ERROR", "登录失败：" + e.getMessage());
+            return RestResponse.error("AUTH_ERROR", "登录失败：" + e.getMessage());
         }
     }
 
@@ -105,10 +105,10 @@ public class AuthController {
             description = "登出成功"
         )
     })
-    public ApiResponse<Void> logout() {
+    public RestResponse<Void> logout() {
         // 主要在前端清理 token，后端可选实现
         // 例如：清理 Redis 中的 session、记录登出日志等
         log.info("User logged out");
-        return ApiResponse.success();
+        return RestResponse.success();
     }
 }

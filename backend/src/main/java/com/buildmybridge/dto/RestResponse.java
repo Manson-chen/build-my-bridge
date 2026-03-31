@@ -6,7 +6,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * 统一的 API 响应格式
  */
 @Schema(description = "API 统一响应格式")
-public class ApiResponse<T> {
+public class RestResponse<T> {
 
     /**
      * 响应码（"SUCCESS" 或错误代码）
@@ -26,10 +26,10 @@ public class ApiResponse<T> {
     @Schema(description = "响应数据")
     private T data;
 
-    public ApiResponse() {
+    public RestResponse() {
     }
 
-    public ApiResponse(String code, String message, T data) {
+    public RestResponse(String code, String message, T data) {
         this.code = code;
         this.message = message;
         this.data = data;
@@ -83,16 +83,16 @@ public class ApiResponse<T> {
             return this;
         }
 
-        public ApiResponse<T> build() {
-            return new ApiResponse<>(code, message, data);
+        public RestResponse<T> build() {
+            return new RestResponse<>(code, message, data);
         }
     }
 
     /**
      * 创建成功响应
      */
-    public static <T> ApiResponse<T> success(T data) {
-        return ApiResponse.<T>builder()
+    public static <T> RestResponse<T> success(T data) {
+        return RestResponse.<T>builder()
                 .code("SUCCESS")
                 .message("请求成功")
                 .data(data)
@@ -102,15 +102,15 @@ public class ApiResponse<T> {
     /**
      * 创建成功响应（无数据）
      */
-    public static <T> ApiResponse<T> success() {
+    public static <T> RestResponse<T> success() {
         return success(null);
     }
 
     /**
      * 创建错误响应
      */
-    public static <T> ApiResponse<T> error(String code, String message) {
-        return ApiResponse.<T>builder()
+    public static <T> RestResponse<T> error(String code, String message) {
+        return RestResponse.<T>builder()
                 .code(code)
                 .message(message)
                 .data(null)
@@ -120,7 +120,7 @@ public class ApiResponse<T> {
     /**
      * 创建错误响应（默认代码）
      */
-    public static <T> ApiResponse<T> error(String message) {
+    public static <T> RestResponse<T> error(String message) {
         return error("ERROR", message);
     }
 }
